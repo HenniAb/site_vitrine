@@ -1,24 +1,49 @@
 import React, { PureComponent } from "react"
 import { Container , Row, Col } from 'react-grid-system';
-import { Jumbotron, Button } from 'reactstrap';
-
+import { Jumbotron } from 'reactstrap';
+import Img from 'react-image';
 
 export default class myValues extends PureComponent{
     render(){
+        const h4Css = {
+            color: "white",
+            letterSpacing: "-0.02em !important",
+            marginTop:"30px",
+        };
         return <Container>
-            <Row style={{paddingTop: "100px"}}>
+            <Row style={{paddingTop: "100px", color: "white"}}>
                 <Col>
-                    <Jumbotron>
-                        <h1 className="display-3">Hello, world!</h1>
-                        <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <Jumbotron style={{background: "none"}}>
+                        <h1 className="display-3">La Centrale Fitness reste à votre écoute !</h1>
+                        <h4 style={h4Css}>Afin de vous fournir les meilleurs réponses à vos questions la Centrale Fitness met à votre disposition plusieurs services.</h4>
                         <hr className="my-2" />
-                        <p>It uses utility classes for typgraphy and spacing to space content out within the larger container.</p>
-                        <p className="lead">
-                            <Button color="primary">Learn More</Button>
-                        </p>
+                        <Row>
+                            <Col>
+                                <Row>
+                                    <Col md={3}>
+                                        <Img width={"90%"} src={require("../img/contacts/004-envelope.png")} />
+                                    </Col>
+                                    <Col>
+                                        <h5>Par mail:</h5>
+                                        <h5>centrale@fitness.com</h5>
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col>
+                                <Row>
+                                    <Col md={3}>
+                                        <Img width={"90%"} src={require("../img/contacts/001-phone-number.png")} />
+                                    </Col>
+                                    <Col>
+                                        <h5>Par téléphone:</h5>
+                                        <h5>+000-000-000</h5>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
                     </Jumbotron>
                 </Col>
-             </Row>
+            </Row>
         </Container>
     }
 }

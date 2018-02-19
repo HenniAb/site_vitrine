@@ -1,30 +1,39 @@
-import React, { PureComponent } from "react";
+import React, {PureComponent} from 'react';
 import Gallery from 'react-photo-gallery';
+import Measure from 'react-measure';
 import Lightbox from 'react-images';
-import { Container , Row, Col } from 'react-grid-system';
-
 
 const photos = [
-    { src: require('../img/caroussel/1.jpg'), width: 4, height: 3 },
-    { src: require('../img/caroussel/2.jpg'), width: 1, height: 1 },
-    { src: require('../img/caroussel/3.jpg'), width: 3, height: 4 },
-    { src: require('../img/caroussel/4.jpg'), width: 3, height: 4 },
-    { src: require('../img/caroussel/5.jpg'), width: 3, height: 4 },
-    { src: require('../img/caroussel/6.jpg'), width: 4, height: 3 },
+    { src: require('../img/caroussel/1.jpg'), width: 5, height: 3 },
+    { src: require('../img/caroussel/2.jpg'), width: 5, height: 3 },
+    { src: require('../img/caroussel/7.JPG'), width: 2, height: 3 },
+    { src: require('../img/caroussel/3.jpg'), width: 5, height: 3 },
+    { src: require('../img/caroussel/4.jpg'), width: 5, height: 3 },
+    { src: require('../img/caroussel/5.jpg'), width: 5, height: 3 },
+    { src: require('../img/caroussel/6.jpg'), width: 5, height: 3 },
+    { src: require('../img/caroussel/8.jpg'), width: 5, height: 3 },
+    { src: require('../img/caroussel/9.jpg'), width: 4, height: 5 },
 ];
 
 const h1Css = {
-    fontSize: "3em",
-    color: "white",
     marginBottom:"30px",
-    letterSpacing: "-0.02em !important"
+    marginLeft:"10px",
+    letterSpacing: "-0.02em !important",
+    color: "white"
 };
 
-export default class App extends PureComponent {
+const h1Css_2 = {
+    marginTop:"50px",
+    marginBottom:"30px",
+    marginLeft:"10px",
+    letterSpacing: "-0.02em !important",
+    color: "white"
+};
+
+export default class media extends PureComponent {
     constructor() {
         super();
-        this.lightboxIsOpen = false;
-        this.state = { currentImage: 0 };
+        this.state = { width: -1, currentImage: 0};
         this.closeLightbox = this.closeLightbox.bind(this);
         this.openLightbox = this.openLightbox.bind(this);
         this.gotoNext = this.gotoNext.bind(this);
@@ -51,28 +60,47 @@ export default class App extends PureComponent {
         this.setState({
             currentImage: this.state.currentImage + 1,
         });
-    }
-
-    render() {
+    }    render() {
+        const width = this.state.width;
         return (
-
-            <Container>
-                <Row style={{paddingTop: "100px"}}>
-                    <Col><h1 style={h1Css}>Gallerie photos</h1></Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Gallery photos={photos} onClick={this.openLightbox} />
-                        <Lightbox images={photos}
-                                  onClose={this.closeLightbox}
-                                  onClickPrev={this.gotoPrevious}
-                                  onClickNext={this.gotoNext}
-                                  currentImage={this.state.currentImage}
-                                  isOpen={this.state.lightboxIsOpen}
-                        />
-                    </Col>
-                </Row>
-            </Container>
+            <Measure bounds onResize={(contentRect) => this.setState({ width: contentRect.bounds.width })}>
+                {
+                    ({measureRef}) => {
+                        if (width < 1 ){
+                            return <div ref={measureRef}/>;
+                        }
+                        let columns = 1;
+                        if (width >= 480){
+                            columns = 2;
+                        }
+                        if (width >= 1024){
+                            columns = 3;
+                        }
+                        if (width >= 1824){
+                            columns = 4;
+                        }
+                        return (
+                            <div style={{paddingTop: "80px"}}>
+                                <h1 style={h1Css}>Galerie photos</h1>
+                                <Gallery photos={photos} columns={columns} onClick={this.openLightbox}/>
+                                <Lightbox images={photos}
+                                          onClose={this.closeLightbox}
+                                          onClickPrev={this.gotoPrevious}
+                                          onClickNext={this.gotoNext}
+                                          currentImage={this.state.currentImage}
+                                          isOpen={this.state.lightboxIsOpen}
+                                />
+                                <h1 style={h1Css_2}>Galerie vidéos</h1>
+                                <div width={"100%"} style={{display:"table"}}>
+                                    <iframe width="420"  style={{display:"table-cell"}} height="315"
+                                            src="https://www.youtube.com/embed/mv0H9iCz8Ms">
+                                    </iframe>
+                                </div>
+                            </div>
+                        )
+                    }
+                }
+            </Measure>
         )
     }
 }

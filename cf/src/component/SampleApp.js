@@ -1,10 +1,10 @@
 import React, { PureComponent } from "react";
 
 import HeaderLinks from "component/HeaderLinks";
-import Mybody from "component/body";
-import MyMedia from "component/media";
+import myBody from "component/body";
+import myMedia from "component/media";
 import myValues from "component/values";
-import myTest from "component/myTest";
+import myContacts from "component/myTest";
 import {Route, Switch} from "react-router-dom";
 import HoverComponent from "component/hoverComponent/HoverComponent";
 import AddCounterComponent from "component/addCounterComponent/AddCounterComponent";
@@ -19,12 +19,12 @@ export default class SampleApp extends PureComponent {
                 <HeaderLinks match={this.props.match}/>
             </div>
             <Switch>
-                <Route exact path="/" component={Mybody}/>
-                <Route exact path="/salles" component={Mybody}/>
+                <Route exact path="/" component={myBody}/>
+                <Route exact path="/salles" component={myBody}/>
                 <Route exact path="/valeurs" component={myValues}/>
-                <Route exact path="/avis" component={Mybody}/>
-                <Route exact path="/media" component={MyMedia}/>
-                <Route exact path="/contacts" component={myTest}/>
+                <Route exact path="/avis" component={myBody}/>
+                <Route exact path="/media" component={myMedia}/>
+                <Route exact path="/contacts" component={myContacts}/>
                 /*<Route exact path="/add" component={AddCounterComponent}/>
                 <Route exact path="/counter" component={CounterComponent}/>*/
                 <Route path="*" component={NotFound} />
