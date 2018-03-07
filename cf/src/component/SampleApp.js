@@ -4,7 +4,7 @@ import HeaderLinks from "component/HeaderLinks";
 import myBody from "component/body";
 import myMedia from "component/media";
 import myValues from "component/values";
-import myContacts from "component/myTest";
+import myContacts from "component/contacts";
 import {Route, Switch} from "react-router-dom";
 import HoverComponent from "component/hoverComponent/HoverComponent";
 import AddCounterComponent from "component/addCounterComponent/AddCounterComponent";
