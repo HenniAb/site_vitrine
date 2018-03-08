@@ -12,26 +12,26 @@ export default class myValues extends PureComponent{
         };
         return (
             <Jumbotron  style={{paddingTop: "100px", color: "white", background: "none"}}>
-                <h1 className="display-3">La Centrale Fitness reste à votre écoute !</h1>
-                <h4 style={h4Css}>Afin de vous fournir les meilleurs réponses à vos questions la Centrale Fitness met à votre disposition plusieurs services.</h4>
+                <h1  style={{textAlign: "center"}} className="display-3">La Centrale Fitness reste à votre écoute !</h1>
+                <h4 style={h4Css}  style={{textAlign: "center"}}>Afin de vous fournir les meilleurs réponses à vos questions la Centrale Fitness met à votre disposition plusieurs services.</h4>
                 <hr className="my-2" />
                 <Container>
-                    <Row style={{paddingTop: "100px"}}>
-                        <Col xl={6} lg={6} md={6} sm={12}  xs={12} offset={{sm: 0, xs: 0, md: 0, xl: 0, lg: 0}}>
-                            <Col >
-                                <Img width={"50%"} src={require("../img/contacts/004-envelope.png")} />
+                    <Row style={{paddingTop: "50px", textAlign: "center"}}>
+                        <Col xl={6} lg={6} md={6} sm={12} xs={12} offset={{sm: 0, xs: 0, md: 0, xl: 0, lg: 0}}>
+                            <Col>
+                                <Img width={"40%"} src={require("../img/contacts/004-envelope.png")} />
                             </Col>
                             <Col>
-                                <h5>Par mail:</h5>
-                                <h5>centrale@fitness.com</h5>
+                                <h5 style={{marginTop: "15px"}}>Par mail:</h5>
+                                <h5 style={{marginBottom: "100px"}}>centrale@fitness.com</h5>
                             </Col>
                         </Col>
-                        <Col xl={6} lg={6} md={6} sm={12}  xs={12} offset={{sm: 0, xs: 0, md: 0, xl: 0, lg: 0}}>
+                        <Col style={{textAlign: "center"}} xl={6} lg={6} md={6} sm={12}  xs={12} offset={{sm: 0, xs: 0, md: 0, xl: 0, lg: 0}}>
                             <Col >
-                                <Img width={"50%"} src={require("../img/contacts/001-phone-number.png")} />
+                                <Img width={"40%"} src={require("../img/contacts/001-phone-number.png")} />
                             </Col>
                             <Col>
-                                <h5>Par téléphone:</h5>
+                                <h5 style={{marginTop: "15px"}}>Par téléphone:</h5>
                                 <h5>+000-000-000</h5>
                             </Col>
                         </Col>
