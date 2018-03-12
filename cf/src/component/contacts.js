@@ -19,7 +19,7 @@ export default class myValues extends PureComponent{
                     <Row style={{paddingTop: "50px", textAlign: "center"}}>
                         <Col xl={6} lg={6} md={6} sm={12} xs={12} offset={{sm: 0, xs: 0, md: 0, xl: 0, lg: 0}}>
                             <Col>
-                                <Img width={"40%"} src={require("../img/contacts/004-envelope.png")} />
+                                <Img width={"35%"} src={require("../img/contacts/004-envelope.png")} />
                             </Col>
                             <Col>
                                 <h5 style={{marginTop: "15px"}}>Par mail:</h5>
@@ -28,7 +28,7 @@ export default class myValues extends PureComponent{
                         </Col>
                         <Col style={{textAlign: "center"}} xl={6} lg={6} md={6} sm={12}  xs={12} offset={{sm: 0, xs: 0, md: 0, xl: 0, lg: 0}}>
                             <Col >
-                                <Img width={"40%"} src={require("../img/contacts/001-phone-number.png")} />
+                                <Img width={"35%"} src={require("../img/contacts/001-phone-number.png")} />
                             </Col>
                             <Col>
                                 <h5 style={{marginTop: "15px"}}>Par téléphone:</h5>

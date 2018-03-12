@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react"
 import { renderToString } from "react-dom/server"
-import logo from "../img/logo.png"
 
 export default class HTML extends PureComponent {
     render() {
@@ -9,6 +8,7 @@ export default class HTML extends PureComponent {
         const content = component ? renderToString(component) : "";
 
         return (
+            /*couleur du bled: #FF3714, #FF7500*/
             <html lang="fr"  style={{fontFamily:"'Roboto', sans-serif", background: 'linear-gradient(to left top, #F8DB6C, #E95C57)', backgroundRepeat: "no-repeat", minHeight: "100%"}}>
                 <head>
                     <title>Centrale Fitness</title>
@@ -16,6 +16,7 @@ export default class HTML extends PureComponent {
                     <meta name="viewport" content="width=device-width"/>
                     <link rel="stylesheet" href={"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"}/>
                     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+                    <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css" />
                 </head>
                 <body style={{backgroundColor: "transparent"}}>
                     <div id="app" dangerouslySetInnerHTML={{__html: content}}/>

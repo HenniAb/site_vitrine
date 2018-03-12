@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 
-
 module.exports = {
     entry: [
         "react-hot-loader/patch",
@@ -18,6 +17,13 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: "babel-loader"
+            },
+            {
+                test: /\.html$/,
+                loader: 'html-loader?attrs[]=video:src'
+            }, {
+                test: /\.mp4$/,
+                loader: 'url-loader?limit=10000&mimetype=video/mp4'
             },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
@@ -67,4 +73,4 @@ module.exports = {
             "**": "http://localhost:3000"
         }
     }
-}
+};

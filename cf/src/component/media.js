@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import Gallery from 'react-photo-gallery';
 import Measure from 'react-measure';
 import Lightbox from 'react-images';
+import { Player, ControlBar, PlayToggle} from 'video-react';
 
 const photos = [
     { src: require('../img/caroussel/1.jpg'), width: 5, height: 3 },
@@ -31,13 +32,14 @@ const h1Css_2 = {
 };
 
 export default class media extends PureComponent {
-    constructor() {
-        super();
+    constructor(props, context) {
+        super(props, context);
         this.state = { width: -1, currentImage: 0};
         this.closeLightbox = this.closeLightbox.bind(this);
         this.openLightbox = this.openLightbox.bind(this);
         this.gotoNext = this.gotoNext.bind(this);
         this.gotoPrevious = this.gotoPrevious.bind(this);
+
     }
     openLightbox(event, obj) {
         this.setState({
@@ -60,47 +62,56 @@ export default class media extends PureComponent {
         this.setState({
             currentImage: this.state.currentImage + 1,
         });
-    }    render() {
+    }
+
+    render() {
         const width = this.state.width;
         return (
-            <Measure bounds onResize={(contentRect) => this.setState({ width: contentRect.bounds.width })}>
-                {
-                    ({measureRef}) => {
-                        if (width < 1 ){
-                            return <div ref={measureRef}/>;
-                        }
-                        let columns = 1;
-                        if (width >= 480){
-                            columns = 2;
-                        }
-                        if (width >= 1024){
-                            columns = 3;
-                        }
-                        if (width >= 1824){
-                            columns = 4;
-                        }
-                        return (
-                            <div style={{paddingTop: "80px"}}>
-                                <h1 style={h1Css}>Galerie photos</h1>
-                                <Gallery photos={photos} columns={columns} onClick={this.openLightbox}/>
-                                <Lightbox images={photos}
-                                          onClose={this.closeLightbox}
-                                          onClickPrev={this.gotoPrevious}
-                                          onClickNext={this.gotoNext}
-                                          currentImage={this.state.currentImage}
-                                          isOpen={this.state.lightboxIsOpen}
-                                />
-                                <h1 style={h1Css_2}>Galerie vidéos</h1>
-                                <div width={"100%"} style={{display:"table"}}>
-                                    <iframe width="420"  style={{display:"table-cell"}} height="315"
-                                            src="https://www.youtube.com/embed/mv0H9iCz8Ms">
-                                    </iframe>
+            <div>
+                <Measure bounds onResize={(contentRect) => this.setState({ width: contentRect.bounds.width })}>
+                    {
+                        ({measureRef}) => {
+                            if (width < 1 ){
+                                return <div ref={measureRef}/>;
+                            }
+                            let columns = 1;
+                            if (width >= 480){
+                                columns = 2;
+                            }
+                            if (width >= 1024){
+                                columns = 3;
+                            }
+                            if (width >= 1824){
+                                columns = 4;
+                            }
+                            return (
+                                <div style={{paddingTop: "80px"}}>
+                                    <h1 style={h1Css}>Galerie photos</h1>
+                                    <Gallery photos={photos} columns={columns} onClick={this.openLightbox}/>
+                                    <Lightbox images={photos}
+                                              onClose={this.closeLightbox}
+                                              onClickPrev={this.gotoPrevious}
+                                              onClickNext={this.gotoNext}
+                                              currentImage={this.state.currentImage}
+                                              isOpen={this.state.lightboxIsOpen}
+                                    />
+
                                 </div>
-                            </div>
-                        )
+                            )
+                        }
                     }
-                }
-            </Measure>
+                </Measure>
+                <h1 style={h1Css_2}>Galerie vidéos</h1>
+                <Player
+                    autoPlay
+                    poster="/assets/poster.png"
+                    src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                >
+                    <ControlBar autoHide={false} disableDefaultControls={true}>
+                        <PlayToggle />
+                    </ControlBar>
+                </Player>
+            </div>
         )
     }
 }
