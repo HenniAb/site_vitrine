@@ -2,7 +2,8 @@ import React, {PureComponent} from 'react';
 import Gallery from 'react-photo-gallery';
 import Measure from 'react-measure';
 import Lightbox from 'react-images';
-import { Player, ControlBar, PlayToggle} from 'video-react';
+import { Player, BigPlayButton } from 'video-react';
+import { Container , Row, Col } from 'react-grid-system';
 
 const photos = [
     { src: require('../img/caroussel/1.jpg'), width: 5, height: 3 },
@@ -34,12 +35,13 @@ const h1Css_2 = {
 export default class media extends PureComponent {
     constructor(props, context) {
         super(props, context);
-        this.state = { width: -1, currentImage: 0};
+        this.state = { width: -1, currentImage: 0, isToggleOn: true};
         this.closeLightbox = this.closeLightbox.bind(this);
         this.openLightbox = this.openLightbox.bind(this);
         this.gotoNext = this.gotoNext.bind(this);
         this.gotoPrevious = this.gotoPrevious.bind(this);
 
+        this.handleClick = this.handleClick.bind(this);
     }
     openLightbox(event, obj) {
         this.setState({
@@ -61,6 +63,12 @@ export default class media extends PureComponent {
     gotoNext() {
         this.setState({
             currentImage: this.state.currentImage + 1,
+        });
+    }
+    handleClick() {
+        console.log("This is a test");
+        this.setState({
+            isToggleOn: false,
         });
     }
 
@@ -86,7 +94,7 @@ export default class media extends PureComponent {
                             }
                             return (
                                 <div style={{paddingTop: "80px"}}>
-                                    <h1 style={h1Css}>Galerie photos</h1>
+                                    <h1 style={h1Css}>Photos</h1>
                                     <Gallery photos={photos} columns={columns} onClick={this.openLightbox}/>
                                     <Lightbox images={photos}
                                               onClose={this.closeLightbox}
@@ -101,16 +109,21 @@ export default class media extends PureComponent {
                         }
                     }
                 </Measure>
-                <h1 style={h1Css_2}>Galerie vidéos</h1>
-                <Player
-                    autoPlay
-                    poster="/assets/poster.png"
-                    src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-                >
-                    <ControlBar autoHide={false} disableDefaultControls={true}>
-                        <PlayToggle />
-                    </ControlBar>
-                </Player>
+                <h1 style={h1Css_2}>Vidéo</h1>
+                <Container style={{marginBottom: "100px"}}>
+                    <Row>
+                        <Col >
+                            <Player
+                                fluid
+                                playsInline
+                                poster={require("../../public/img/posterVideo.jpg")}
+                                src={require("../../public/video/firstVideo.mp4")}
+                            >
+                                <BigPlayButton style={{display: "none"}} onClick={this.handleClick} /*style={this.state.isToggleOn ? {display: "block"} : {display: "none"}}*/ position="center"/>
+                            </Player>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         )
     }
