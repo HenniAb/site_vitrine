@@ -1,0 +1,9 @@
+html{
+    font-family:'Roboto', 'sans-serif';
+    background: linear-gradient(to left top, #F8DB6C, #E95C57) no-repeat;
+    min-height: 100%;
+}
+
+body{
+    background-color: transparent;
+}
