@@ -119,7 +119,6 @@ export default class media extends PureComponent {
         <Container style={{marginBottom: "100px"}}>
           <Row>
             <Col >
-
               <Video controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
                      poster={"/img/posterVideo.jpg"}>
                 <source src={"/video/firstVideo.mp4"} type="video/mp4" />
