@@ -1,6 +1,6 @@
 # Centrale Fitness - Site Vitrine
 ### Using:
-### [React Router v4](https://github.com/ReactTraining/react-router),<br>[React-router-redux v5](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux),<br>[SemanticUi React](https://react.semantic-ui.com/), <br>[React Redux v5](https://github.com/reactjs/react-redux)
+### [React Router v4](https://github.com/ReactTraining/react-router),<br>[React-router-redux v5](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-redux),<br>[React Redux v5](https://github.com/reactjs/react-redux)
 
 Scripts
 ---------------
