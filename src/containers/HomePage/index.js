@@ -1,3 +1,4 @@
+/* eslint-disable no-multi-spaces */
 import React, { PureComponent } from 'react';
 import Img from 'react-image';
 import { Container, Row, Col } from 'react-grid-system';
@@ -283,7 +284,7 @@ export default class myBody extends PureComponent {
           id="anchor1"
           style={ { marginTop: '10px' } }
         />
-        <Row style={ { height: '100vh' } }>
+        <Row className="homePageElement" >
           <Col
             style={ colCss }
             xl={ 8 }
@@ -322,7 +323,7 @@ export default class myBody extends PureComponent {
             </Col>
           </Col>
         </Row>
-        <Row id="anchor2" style={ { height: '100vh' } }>
+        <Row id="anchor2" className="homePageElement">
           <Col
             xl={ 8 }
             lg={ 8 }
@@ -365,7 +366,7 @@ export default class myBody extends PureComponent {
             </Col>
           </Col>
         </Row>
-        <Row id="anchor3" style={ { height: '100vh' } }>
+        <Row id="anchor3" className="homePageElement">
           <Col
             style={ colCss }
             xl={ 8 }
@@ -406,7 +407,7 @@ export default class myBody extends PureComponent {
             </Col>
           </Col>
         </Row>
-        <Row id="anchor4" style={ { height: '100vh' } }>
+        <Row id="anchor4" className="homePageElement">
           <Col
             style={ colCss }
             xl={ 8 }

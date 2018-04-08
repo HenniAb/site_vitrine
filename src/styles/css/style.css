@@ -8,7 +8,7 @@ body {
     background-color: transparent;
 }
 
-footer :first-child{
+footer :first-child {
 }
 
 .socialIconsFooter-svg path {
@@ -75,8 +75,10 @@ img {
     .secondRowHomepage {
         height: 30vh;
     }
+    .homePageElement {
+        height: 100vh;
+    }
 }
-
 @media only screen and (min-device-width: 560px) and (max-device-width: 768px) {
     .secondRowHomepage {
         height: 60vh;
