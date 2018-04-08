@@ -92,198 +92,203 @@ export default class myBody extends PureComponent {
     };
     return (
       <Container fluid style={ containerCss }>
-        <Row style={ { paddingTop: '55px', textAlign: 'center' } }>
-          <Col
-            className="firstRowHomepage"
-            style={ { padding: '0' } }
-          >
-            <Row>
+        <Row className="rowHomepage">
+          <Col>
+            <Row style={ { paddingTop: '55px', textAlign: 'center' } }>
               <Col
-                style={ { marginTop: '35px' } }
-                className="alignItemsBg"
+                className="firstRowHomepage"
+                style={ { padding: '0' } }
               >
-                <img
-                  alt="logo_of_header"
-                  style={ { height: '26vh' } }
-                  src={ logo }
-                />
+                <Row>
+                  <Col
+                    style={ { marginTop: '35px' } }
+                    className="alignItemsBg"
+                  >
+                    <img
+                      alt="logo_of_header"
+                      style={ { height: '26vh' } }
+                      src={ logo }
+                    />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col className="alignItemsBg">
+                    <h2 style={ h2Css1 }>Centrale Fitness</h2>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col className="alignItemsBg">
+                    <h3 style={ { width: '90%', margin: 'auto' } }>La solution innovante pour vous motivez au sport tout
+                      en
+                      réduisant vos dépenses</h3>
+                  </Col>
+                </Row>
               </Col>
             </Row>
-            <Row>
-              <Col className="alignItemsBg">
-                <h2 style={ h2Css1 }>Centrale Fitness</h2>
+            <Row className="secondRowHomepage">
+              <Col
+                xl={ 3 }
+                lg={ 3 }
+                md={ 3 }
+                sm={ 6 }
+                xs={ 12 }
+                offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
+                className="homepageIcones_1"
+                style={ { padding: '0' } }
+              >
+                <Link
+                  className="test6"
+                  to="anchor1"
+                  activeClass="active"
+                  isDynamic={ true }
+                  spy={ true }
+                  smooth={ true }
+                  duration={ 500 }
+                >
+                  <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_firstCol_1">
+                      <img
+                        alt="icone_cycle"
+                        style={ { width: '8vw' } }
+                        src={ cycle }
+                      />
+                    </Col>
+                  </Row>
+                  <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_secondCol_1">
+                      <h4 style={ { fontSize: '1.4rem' } }>Qui sommes-nous ?</h4>
+                    </Col>
+                  </Row>
+                  <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_thirdCol_1" />
+                  </Row>
+                </Link>
+              </Col>
+              <Col
+                xl={ 3 }
+                lg={ 3 }
+                md={ 3 }
+                sm={ 6 }
+                xs={ 12 }
+                offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
+                className="homepageIcones_2"
+                style={ { padding: '0' } }
+              >
+                <Link
+                  style={ { top: '15px' } }
+                  className="test6"
+                  to="anchor2"
+                  activeClass="active"
+                  isDynamic={ true }
+                  spy={ true }
+                  smooth={ true }
+                  duration={ 500 }
+                >
+                  <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_firstCol_2">
+                      <img
+                        alt="icone_module"
+                        style={ { width: '8vw' } }
+                        src={ module }
+                      />
+                    </Col>
+                  </Row>
+                  <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_secondCol_2">
+                      <h4 style={ { fontSize: '1.4rem' } }>Le module</h4>
+                    </Col>
+                  </Row>
+                  <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_thirdCol_2" />
+                  </Row>
+                </Link>
+              </Col>
+              <Col
+                xl={ 3 }
+                lg={ 3 }
+                md={ 3 }
+                sm={ 6 }
+                xs={ 12 }
+                offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
+                className="homepageIcones_3"
+                style={ { padding: '0' } }
+              >
+                <Link
+                  style={ { top: '15px' } }
+                  className="test6"
+                  to="anchor3"
+                  activeClass="active"
+                  isDynamic={ true }
+                  spy={ true }
+                  smooth={ true }
+                  duration={ 500 }
+                >
+                  <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_firstCol_3">
+                      <img
+                        alt="icone_ecology"
+                        style={ { width: '8vw' } }
+                        src={ ecology }
+                      />
+                    </Col>
+                  </Row>
+                  <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_secondCol_3">
+                      <h4 style={ { fontSize: '1.4rem' } }>L'apect écologique</h4>
+                    </Col>
+                  </Row>
+                  <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_thirdCol_3" />
+                  </Row>
+                </Link>
+              </Col>
+              <Col
+                xl={ 3 }
+                lg={ 3 }
+                md={ 3 }
+                sm={ 6 }
+                xs={ 12 }
+                offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
+                className="homepageIcones_4"
+                style={ { padding: '0' } }
+              >
+                <Link
+                  style={ { top: '15px' } }
+                  className="test6"
+                  to="anchor4"
+                  activeClass="active"
+                  isDynamic={ true }
+                  spy={ true }
+                  smooth={ true }
+                  duration={ 500 }
+                >
+                  <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_firstCol_4">
+                      <img
+                        alt="icone_money"
+                        style={ { width: '8vw' } }
+                        src={ money }
+                      />
+                    </Col>
+                  </Row>
+                  <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_secondCol_4">
+                      <h4 style={ { fontSize: '1.4rem' } }>Economisez de l'argent</h4>
+                    </Col>
+                  </Row>
+                  <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
+                    <Col className="secondRowHomepage_thirdCol_4" />
+                  </Row>
+                </Link>
               </Col>
             </Row>
-            <Row>
-              <Col className="alignItemsBg">
-                <h3 style={ { width: '90%', margin: 'auto' } }>La solution innovante pour vous motivez au sport tout en
-                  réduisant vos dépenses</h3>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-        <Row className="secondRowHomepage">
-          <Col
-            xl={ 3 }
-            lg={ 3 }
-            md={ 3 }
-            sm={ 6 }
-            xs={ 12 }
-            offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
-            className="homepageIcones_1"
-            style={ { padding: '0' } }
-          >
-            <Link
-              className="test6"
-              to="anchor1"
-              activeClass="active"
-              isDynamic={ true }
-              spy={ true }
-              smooth={ true }
-              duration={ 500 }
-            >
-              <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_firstCol_1">
-                  <img
-                    alt="icone_cycle"
-                    style={ { width: '8vw' } }
-                    src={ cycle }
-                  />
-                </Col>
-              </Row>
-              <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_secondCol_1">
-                  <h4 style={ { fontSize: '1.4rem' } }>Qui sommes-nous ?</h4>
-                </Col>
-              </Row>
-              <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_thirdCol_1" />
-              </Row>
-            </Link>
-          </Col>
-          <Col
-            xl={ 3 }
-            lg={ 3 }
-            md={ 3 }
-            sm={ 6 }
-            xs={ 12 }
-            offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
-            className="homepageIcones_2"
-            style={ { padding: '0' } }
-          >
-            <Link
-              style={ { top: '15px' } }
-              className="test6"
-              to="anchor2"
-              activeClass="active"
-              isDynamic={ true }
-              spy={ true }
-              smooth={ true }
-              duration={ 500 }
-            >
-              <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_firstCol_2">
-                  <img
-                    alt="icone_module"
-                    style={ { width: '8vw' } }
-                    src={ module }
-                  />
-                </Col>
-              </Row>
-              <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_secondCol_2">
-                  <h4 style={ { fontSize: '1.4rem' } }>Le module</h4>
-                </Col>
-              </Row>
-              <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_thirdCol_2" />
-              </Row>
-            </Link>
-          </Col>
-          <Col
-            xl={ 3 }
-            lg={ 3 }
-            md={ 3 }
-            sm={ 6 }
-            xs={ 12 }
-            offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
-            className="homepageIcones_3"
-            style={ { padding: '0' } }
-          >
-            <Link
-              style={ { top: '15px' } }
-              className="test6"
-              to="anchor3"
-              activeClass="active"
-              isDynamic={ true }
-              spy={ true }
-              smooth={ true }
-              duration={ 500 }
-            >
-              <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_firstCol_3">
-                  <img
-                    alt="icone_ecology"
-                    style={ { width: '8vw' } }
-                    src={ ecology }
-                  />
-                </Col>
-              </Row>
-              <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_secondCol_3">
-                  <h4 style={ { fontSize: '1.4rem' } }>L'apect écologique</h4>
-                </Col>
-              </Row>
-              <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_thirdCol_3" />
-              </Row>
-            </Link>
-          </Col>
-          <Col
-            xl={ 3 }
-            lg={ 3 }
-            md={ 3 }
-            sm={ 6 }
-            xs={ 12 }
-            offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
-            className="homepageIcones_4"
-            style={ { padding: '0' } }
-          >
-            <Link
-              style={ { top: '15px' } }
-              className="test6"
-              to="anchor4"
-              activeClass="active"
-              isDynamic={ true }
-              spy={ true }
-              smooth={ true }
-              duration={ 500 }
-            >
-              <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_firstCol_4">
-                  <img
-                    alt="icone_money"
-                    style={ { width: '8vw' } }
-                    src={ money }
-                  />
-                </Col>
-              </Row>
-              <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_secondCol_4">
-                  <h4 style={ { fontSize: '1.4rem' } }>Economisez de l'argent</h4>
-                </Col>
-              </Row>
-              <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
-                <Col className="secondRowHomepage_thirdCol_4" />
-              </Row>
-            </Link>
           </Col>
         </Row>
         <div
           id="anchor1"
           style={ { marginTop: '10px' } }
         />
-        <Row className="homePageElement" >
+        <Row className="homePageElement">
           <Col
             style={ colCss }
             xl={ 8 }

@@ -1,6 +1,6 @@
 html {
     font-family: 'Roboto', 'sans-serif';
-    background: linear-gradient(to left top, #F8DB6C, #E95C57) no-repeat;
+    background: white;
     min-height: 100%;
 }
 
@@ -9,6 +9,39 @@ body {
 }
 
 footer :first-child {
+}
+
+.navbarCf {
+    margin: auto;
+    min-height: 55px;
+}
+
+.navbarBrandCf, .nav-link {
+    display: flex;
+}
+
+.navbarCollapseCf, .navbarCollapseCf:first-child, .navbarLinksCf {
+    min-height: 55px;
+}
+
+.navbarLinksCf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 10px 0 10px !important;
+}
+
+.navbarLinksTextCf {
+    margin: auto;
+    color: white;
+}
+
+.navbarLinksCf:hover {
+    background: white;
+}
+
+.navbarLinksCf:hover .navbarLinksTextCf{
+    color: black;
 }
 
 .socialIconsFooter-svg path {
@@ -49,6 +82,10 @@ img {
     display: inline-block;
 }
 
+.rowHomepage {
+    background: linear-gradient(to left bottom, #FF5889, #FFBD68) no-repeat;
+}
+
 .firstRowHomepage {
     /*filter: grayscale(100%);*/
     height: 60vh;
@@ -75,10 +112,12 @@ img {
     .secondRowHomepage {
         height: 30vh;
     }
+
     .homePageElement {
         height: 100vh;
     }
 }
+
 @media only screen and (min-device-width: 560px) and (max-device-width: 768px) {
     .secondRowHomepage {
         height: 60vh;
