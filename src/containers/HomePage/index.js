@@ -1,4 +1,3 @@
-/* eslint-disable no-multi-spaces */
 import React, { PureComponent } from 'react';
 import Img from 'react-image';
 import { Container, Row, Col } from 'react-grid-system';
