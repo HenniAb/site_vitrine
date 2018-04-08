@@ -20,11 +20,11 @@ import presVideo from '../../assets/video/firstVideo.mp4';
 const photos = [
   { src: pic1, width: 5, height: 3 },
   { src: pic2, width: 5, height: 3 },
-  { src: pic3, width: 2, height: 3 },
+  { src: pic7, width: 2, height: 3 },
   { src: pic4, width: 5, height: 3 },
   { src: pic5, width: 5, height: 3 },
   { src: pic6, width: 5, height: 3 },
-  { src: pic7, width: 5, height: 3 },
+  { src: pic3, width: 5, height: 3 },
   { src: pic8, width: 5, height: 3 },
   { src: pic9, width: 4, height: 5 }
 ];
