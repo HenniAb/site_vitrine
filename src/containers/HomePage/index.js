@@ -3,8 +3,10 @@ import Img from 'react-image';
 import { Container, Row, Col } from 'react-grid-system';
 import { Link } from 'react-scroll';
 
+import SVGInline from 'react-svg-inline';
+import logo from 'src/assets/images/logoCf.svg';
+
 import cycle from 'src/assets/images/iconesHomepage/cycle.png';
-import logo from 'src/assets/images/logo_cf_header.png';
 import module from 'src/assets/images/iconesHomepage/module.png';
 import ecology from 'src/assets/images/iconesHomepage/ecology.png';
 import money from 'src/assets/images/iconesHomepage/money.png';
@@ -101,13 +103,14 @@ export default class myBody extends PureComponent {
               >
                 <Row>
                   <Col
-                    style={ { marginTop: '35px' } }
+                    style={ { marginTop: '10px' } }
                     className="alignItemsBg"
                   >
-                    <img
+                    <SVGInline
                       alt="logo_of_header"
-                      style={ { height: '26vh' } }
-                      src={ logo }
+                      fill={ 'white' }
+                      height={ '20vh' }
+                      svg={ logo }
                     />
                   </Col>
                 </Row>
@@ -149,7 +152,7 @@ export default class myBody extends PureComponent {
                     <Col className="secondRowHomepage_firstCol_1">
                       <img
                         alt="icone_cycle"
-                        style={ { width: '8vw' } }
+                        style={ { width: '4.2rem', height: 'auto' } }
                         src={ cycle }
                       />
                     </Col>
@@ -188,7 +191,7 @@ export default class myBody extends PureComponent {
                     <Col className="secondRowHomepage_firstCol_2">
                       <img
                         alt="icone_module"
-                        style={ { width: '8vw' } }
+                        style={ { width: '4.2rem', height: 'auto' } }
                         src={ module }
                       />
                     </Col>
@@ -227,7 +230,7 @@ export default class myBody extends PureComponent {
                     <Col className="secondRowHomepage_firstCol_3">
                       <img
                         alt="icone_ecology"
-                        style={ { width: '8vw' } }
+                        style={ { width: '4.2rem', height: 'auto' } }
                         src={ ecology }
                       />
                     </Col>
@@ -266,7 +269,7 @@ export default class myBody extends PureComponent {
                     <Col className="secondRowHomepage_firstCol_4">
                       <img
                         alt="icone_money"
-                        style={ { width: '8vw' } }
+                        style={ { width: '4.2rem', height: 'auto' } }
                         src={ money }
                       />
                     </Col>
