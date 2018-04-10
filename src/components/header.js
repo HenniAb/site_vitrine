@@ -18,7 +18,7 @@ const colorBgNav = {
   position: 'fixed',
   minWidth: '100%',
   zIndex: '4',
-  padding: '0 .5rem 0 .5rem'
+  padding: '0px 0px 0px 0.5rem'
 };
 
 export default class HeaderLinks extends PureComponent {
@@ -42,7 +42,7 @@ export default class HeaderLinks extends PureComponent {
       <header>
         <Navbar className="navbarCf" color="faded" light expand="md" style={ colorBgNav }>
           <NavbarBrand className="navbarBrandCf" href="/">
-            <span style={ { margin: 'auto', color: 'white' } }>Centrale Fitness&nbsp;</span>
+            <span style={ { margin: 'auto', color: 'white', fontFamily: 'BjornLight' } }>Centrale Fitness&nbsp;</span>
             <SVGInline
               alt="logo_of_header"
               className="socialIconsFooter"

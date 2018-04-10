@@ -1,10 +1,35 @@
+@font-face {
+    font-family: BjornRegular;
+    src: url('../../assets/fonts/Bjorn/BjornRegular.otf');
+}
+@font-face {
+    font-family: BjornHalftone;
+    src: url('../../assets/fonts/Bjorn/BjornHalftone.otf');
+}
+@font-face {
+    font-family: BjornLight;
+    src: url('../../assets/fonts/Bjorn/BjornLight.otf');
+}
+@font-face {
+    font-family: AquawaxLight;
+    src: url('../../assets/fonts/aquawax/AquawaxLight.ttf');
+}
+@font-face {
+    font-family: AquawaxMedium;
+    src: url('../../assets/fonts/aquawax/AquawaxMedium.ttf');
+}
+
 html {
-    font-family: 'Roboto', 'sans-serif';
-    background: white;
     min-height: 100%;
 }
 
+header{
+    color: white;
+}
+
 body {
+    font-family: AquawaxLight, sans-serif;
+    color: black;
     background-color: transparent;
 }
 
@@ -40,7 +65,7 @@ footer :first-child {
     background: white;
 }
 
-.navbarLinksCf:hover .navbarLinksTextCf{
+.navbarLinksCf:hover .navbarLinksTextCf {
     color: black;
 }
 

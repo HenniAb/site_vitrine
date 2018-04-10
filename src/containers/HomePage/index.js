@@ -81,7 +81,8 @@ export default class myBody extends PureComponent {
     };
     const h2Css1 = {
       letterSpacing: '-0.02em !important',
-      fontSize: '40px'
+      fontSize: '40px',
+      fontFamily: 'BjornLight'
     };
     const h3Css1 = {
       fontSize: '1.2em',
