@@ -23,18 +23,25 @@ html {
     min-height: 100%;
 }
 
-header{
+body {
+    font-family: AquawaxLight, sans-serif;
+}
+
+/*************************************************/
+
+header *, .rowHomepage *, footer *{
     color: white;
 }
 
-body {
-    font-family: AquawaxLight, sans-serif;
+.homePageElement *{
     color: black;
-    background-color: transparent;
 }
 
-footer :first-child {
+.normalFont{
+    font-family: BjornLight, sans-serif;
 }
+
+/*************************************************/
 
 .navbarCf {
     margin: auto;
@@ -58,7 +65,6 @@ footer :first-child {
 
 .navbarLinksTextCf {
     margin: auto;
-    color: white;
 }
 
 .navbarLinksCf:hover {
@@ -114,7 +120,7 @@ img {
 .firstRowHomepage {
     /*filter: grayscale(100%);*/
     height: 60vh;
-    background: url("../../assets/images/background.jpg") center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("../../assets/images/background.jpg") center;
     animation-name: img-ani;
     animation-duration: 1s;
     animation-timing-function: ease-in;
@@ -122,6 +128,17 @@ img {
 
 .secondRowHomepage {
     margin-top: 1rem;
+}
+
+.homepageColText{
+    width: 80%!important;
+    flex: 0 0 auto !important;
+}
+.homepageColText h3{
+    font-size: 1.25rem;
+}
+.homepageColText h2{
+    font-size: 2rem;
 }
 
 @keyframes img-ani {

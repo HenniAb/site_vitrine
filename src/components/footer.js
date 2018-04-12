@@ -58,12 +58,12 @@ export default class myFooter extends PureComponent {
                 <Col style={ { margin: 'auto', lineHeight: '40px' } }>
                   <Row>
                     <Col>
-                      <span>Téléphone : +000-000-000</span>
+                      <span>Téléphone : <span className="normalFont">+000-000-000</span></span>
                     </Col>
                   </Row>
                   <Row>
                     <Col>
-                      <span>Email : centrale@fitness.com</span>
+                      <span>Email : centrale<span className="normalFont">@</span>fitness.com</span>
                     </Col>
                   </Row>
                 </Col>
@@ -143,7 +143,7 @@ export default class myFooter extends PureComponent {
           </Row>
           <Row style={ secondRow }>
             <Col style={ { textAlign: 'left' } }>
-              <span><b>@Centrale Fitness 2018</b></span>
+              <span><b><span className="normalFont">@</span>Centrale Fitness<span className="normalFont"> 2018</span></b></span>
             </Col>
             <Col style={ { textAlign: 'right' } }>
               <span><b>Mentions légales</b></span>
