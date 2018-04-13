@@ -66,7 +66,7 @@ export default class myBody extends PureComponent {
       <Container fluid style={ containerCss }>
         <Row className="rowHomepage">
           <Col>
-            <Row style={ { paddingTop: '55px', textAlign: 'center' } }>
+            <Row style={ { paddingTop: '56px', textAlign: 'center' } }>
               <Col
                 className="firstRowHomepage"
                 style={ { padding: '0' } }
@@ -351,6 +351,7 @@ export default class myBody extends PureComponent {
         </Row> */ }
         <Row
           id="anchor2"
+          style={ { background: 'linear-gradient(to left bottom, #a6c0fe, #f68084) no-repeat' } }
         >
           <Col
             xl={ 6 }
@@ -369,6 +370,7 @@ export default class myBody extends PureComponent {
           >
             <Col
               className="homepageColText"
+              style={ { color: 'white' } }
             >
               <h2>Le module de récupération d'énergie.</h2>
               <h3>Ce module permettra à son utilisateur de convertir l'énergie mécanique en
@@ -454,7 +456,7 @@ export default class myBody extends PureComponent {
         </Row>
         */ }
         <Row
-          id="anchor1"
+          id="anchor3"
         >
           <Col
             xl={ 6 }
@@ -554,7 +556,8 @@ export default class myBody extends PureComponent {
         </Row>
         */ }
         <Row
-          id="anchor2"
+          id="anchor4"
+          style={ { background: 'linear-gradient(to left, #cfc7f8 0%, #ebbba7 100%)' } }
         >
           <Col
             xl={ 6 }
@@ -573,6 +576,7 @@ export default class myBody extends PureComponent {
           >
             <Col
               className="homepageColText"
+              style={ { color: 'white' } }
             >
               <h2>Pédalez plus pour économisez plus</h2>
               <h3>Outre le fais que Centrale Fitness vous propose un rabais proportionnel sur votre
