@@ -134,12 +134,7 @@ img {
     width: 80%!important;
     flex: 0 0 auto !important;
 }
-.homepageColText h3{
-    font-size: 1.25rem;
-}
-.homepageColText h2{
-    font-size: 2rem;
-}
+
 
 @keyframes img-ani {
     from {
@@ -164,11 +159,17 @@ img {
     .secondRowHomepage {
         height: 60vh;
     }
+    .homepageColText{
+        padding-top: 50px;
+    }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 560px) {
     .secondRowHomepage {
         height: 100vh;
+    }
+    .homepageColText{
+        padding-top: 50px;
     }
 }
 

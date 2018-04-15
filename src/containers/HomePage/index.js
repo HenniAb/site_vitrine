@@ -129,7 +129,7 @@ export default class myBody extends PureComponent {
                   </Row>
                   <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
                     <Col className="secondRowHomepage_secondCol_1">
-                      <h4 style={ { fontSize: '1.4rem' } }>Qui sommes-nous ?</h4>
+                      <h4 style={ { fontSize: '1.4rem' } }>Notre solution</h4>
                     </Col>
                   </Row>
                   <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
@@ -246,7 +246,7 @@ export default class myBody extends PureComponent {
                   </Row>
                   <Row style={ { width: '75%', margin: 'auto', cursor: 'pointer' } }>
                     <Col className="secondRowHomepage_secondCol_4">
-                      <h4 style={ { fontSize: '1.4rem' } }>Economisez de l'argent</h4>
+                      <h4 style={ { fontSize: '1.4rem' } }>Réduisez vos coûts</h4>
                     </Col>
                   </Row>
                   <Row style={ { width: '50%', margin: 'auto', cursor: 'pointer' } }>
@@ -277,12 +277,13 @@ export default class myBody extends PureComponent {
             <Col
               className="homepageColText"
             >
-              <h2>Le sport ludique qui met en avant l'écologie et la fidélisation</h2>
-              <h3>Centrale fitness est une solution destinée aux salles de sport.
-                Cette écosystème permet de récupérer l’énergie produite par les sportifs, sous forme
-                d’électricité afin d'avantager les clients ainsi que les gérants des salles de sport.</h3>
-              <h3>Notre objectif à long terme est de réduire la consommation des salles de sport
-                qui sont des infrastructures particulièrement consommatrices en énergie.</h3>
+              <h2 style={ { fontWeight: 'bold', paddingBottom: '30px' } }>L'écosystème ludique qui met en avant
+                l'écologie et la fidélisation</h2>
+              <h5>Notre solution est adaptée aux gérants de salle de sport qui souhaitent offrir une nouvelle expérience
+                sportive à leurs utilisateurs mais aussi réduire leurs coûts en électricité.</h5>
+              <h5 style={ { paddingTop: '15px' } }>Notre objectif à long terme est de réduire la consommation en
+                électricité des salles de sport
+                qui sont des infrastructures particulièrement énergivore.</h5>
             </Col>
           </Col>
           <Col
@@ -372,15 +373,17 @@ export default class myBody extends PureComponent {
               className="homepageColText"
               style={ { color: 'white' } }
             >
-              <h2>Le module de récupération d'énergie.</h2>
-              <h3>Ce module permettra à son utilisateur de convertir l'énergie mécanique en
-                électricité viable et utilisable directement.</h3>
-              <h3>A terme l'électricité produite sera directement réinjectée dans la salle de sport
+              <h4 style={ { paddingBottom: '30px', fontWeight: 'bold' } }>Ce module permettra à son utilisateur de
+                convertir l'énergie
+                mécanique en
+                électricité viable et utilisable directement.</h4>
+              <h5 style={ { fontWeight: 'bold' } }>Une réduction des coûts pour la salle</h5>
+              <p>A terme l'électricité produite sera directement réinjectée dans la salle de sport
                 afin
-                de baisser le coût globale de l'électricité consommée par la salle.</h3>
-              <h3>Cette productivité pourra être consulter par l'utilisateur directement et en temps
-                réel
-                sur son application smartphone.</h3>
+                de baisser le coût globale de l'électricité consommée par la salle.</p>
+              <h5 style={ { paddingTop: '15px', fontWeight: 'bold' } }>Une approche ludique pour les utilisateurs</h5>
+              <p>Cette productiion d'électricité pourra être consulter par l'utilisateur en temps
+                réel sur son application.</p>
             </Col>
           </Col>
           <Col
@@ -475,7 +478,15 @@ export default class myBody extends PureComponent {
             <Col
               className="homepageColText"
             >
-              <h2>L'écologie : un pilier de l'écosystème Centrale Fitness</h2>
+              <h4 style={ { fontWeight: 'bold', marginBottom: '30px' } }>L'écologie : un pilier de l'écosystème Centrale
+                Fitness</h4>
+              <h5 style={ { fontWeight: 'bold' } }>Soulagez vos factures</h5>
+              <p>La production d'électricité renouvelable et réutilisable directement en salle permet
+                d'économiser jusqu'à <span style={ { fontFamily: 'Circular,Helvetica,Arial,sans-serif' } }>30%</span> sur ce type de coûts.</p>
+              <h5 style={ { fontWeight: 'bold', marginTop: '15px' } }>Une réflexion écologique</h5>
+              <p>Cette expérience unique en son genre a aussi pour but de sensibiliser les utilisateurs à la
+                consommation d'énergie.</p>
+              { /* <h2>L'écologie : un pilier de l'écosystème Centrale Fitness</h2>
               <h3>Depuis les préquelles de sa création, les fondateurs de Centrale Fitness voulaient
                 répondre aux problématiques actuelles et futurs de l'environnement.</h3>
               <h3>Produire une énergie renouvelable et réutilisable directement en salle de sport
@@ -483,7 +494,8 @@ export default class myBody extends PureComponent {
                 de répondre en partie à ce problème.</h3>
               <h3>Cette acte sportif en faveur de l'environnement permet aussi de sensibiliser les
                 populations à ce que représente en terme d'énergie l'éclairage par le biais d'une ampoule ou bien un
-                écran de télévision allumée.</h3>
+                écran de télévision allumée.</h3> */ }
+
             </Col>
           </Col>
           <Col
@@ -578,14 +590,13 @@ export default class myBody extends PureComponent {
               className="homepageColText"
               style={ { color: 'white' } }
             >
-              <h2>Pédalez plus pour économisez plus</h2>
-              <h3>Outre le fais que Centrale Fitness vous propose un rabais proportionnel sur votre
-                abonnement en salle, cette écosystème vous propose aussi une autre forme d'avantage.</h3>
-              <h3>Les partenaires sportifs de Centrales Fitness vous propose un ensemble de promotions
-                et
-                de réductions sur un ensemble de produits sportifs. </h3>
-              <h3>Les rabais économiques auprès de nos partenaires ainsi que la ludification du sport
-                grâce à un fondement écologique vous rendront accro à cette nouvelle façon de pratiquer le sport.</h3>
+              <h4 style={ { fontWeight: 'bold', marginBottom: '30px' } }>Pédalez plus pour économisez plus</h4>
+              <h5 style={ { fontWeight: 'bold', marginBottom: '15px' } }>Les avantages pour l'utilisateur</h5>
+              <p>Centrale Fitness vous propose un rabais proportionnel sur votre
+                abonnement en salle en fonction de la quantité d'électricité que vous aurez injecté dans la salle durant
+                le dernier mois.</p>
+              <p>Nous vous proposons aussi grâce à nos partenaires sportifs un ensemble de promotions
+                et de réductions sur un ensemble de produits sportifs. </p>
             </Col>
           </Col>
           <Col

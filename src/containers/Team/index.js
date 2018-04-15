@@ -14,37 +14,40 @@ import Remy from '../../assets/images/team/remy.jpg';
 
 export default class myValues extends PureComponent {
   render() {
-    const h1Css = {
-      fontSize: '3em',
-      color: 'white',
-      marginBottom: '30px',
-      letterSpacing: '-0.02em !important'
-    };
-    const h4Css = {
-      color: 'white',
-      letterSpacing: '-0.02em !important',
-      marginBottom: '50px'
-    };
     return (
-      <Container>
-        <Row style={ { paddingTop: '100px' } }>
+      <Container fluid>
+        <Row style={ {
+          paddingTop: '90px',
+          color: 'white',
+          backgroundImage: 'linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)'
+        } }
+        >
           <Col>
-            <h1 style={ h1Css }>L'équipe Centrale Fitness</h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h4 style={ h4Css }>Sur cet espace vous pouvez visualiser les différents étudiants que regroupe cette idée.
-              Cette équipe a fait le pari fou de rendre le sport à la fois ludique et écologique afin de promouvoir les
-              énergies renouvelables au service du sport.</h4>
+            <Row>
+              <Col style={ { textAlign: 'center' } }>
+                <h1 style={ { fontWeight: 'bold' } }>L'équipe Centrale Fitness</h1>
+              </Col>
+            </Row>
+            <Row style={ { paddingTop: '30px', paddingBottom: '30px' } }>
+              <Col>
+                <h4>Sur cet espace vous pouvez visualiser les différents étudiants que regroupe cette idée.
+                  Cette équipe a fait le pari fou de rendre le sport à la fois ludique et écologique afin de promouvoir
+                  les
+                  énergies renouvelables au service du sport.</h4>
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row style={ { paddingTop: '30px', color: 'white' } }>
-          <Col xl={ 4 } lg={ 4 } md={ 4 } sm={ 12 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
+          <Col xl={ 4 } lg={ 4 } md={ 6 } sm={ 12 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
             <Col style={ { marginBottom: '40px' } }>
-              <Card style={ { background: 'linear-gradient(to right bottom, #EACB87, #E95C57)', border: 'none' } }>
+              <Card style={ {
+                background: 'linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                border: 'none'
+              } }
+              >
                 <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px' } }>Nils Peritore</h3></CardTitle>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Nils Peritore</h3></CardTitle>
                   <CardSubtitle><h4>Développeur du site vitrine</h4></CardSubtitle>
                 </CardBody>
                 <Img width="100%" src={ Nils } alt="Card image cap" />
@@ -59,9 +62,14 @@ export default class myValues extends PureComponent {
               </Card>
             </Col>
             <Col style={ { marginBottom: '40px' } }>
-              <Card style={ { background: 'linear-gradient(to right top, #EACB87, #E95C57)', border: 'none' } }>
+              <Card style={ {
+                background: 'linear-gradient(120deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                border: 'none'
+              } }
+              >
                 <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px' } }>Christelle Baumier</h3></CardTitle>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Christelle Baumier</h3>
+                  </CardTitle>
                   <CardSubtitle><h4>En charge du système embarqué</h4></CardSubtitle>
                 </CardBody>
                 <Img width="100%" src={ Chris } alt="Card image cap" />
@@ -77,9 +85,13 @@ export default class myValues extends PureComponent {
               </Card>
             </Col>
             <Col style={ { marginBottom: '40px' } }>
-              <Card style={ { background: 'linear-gradient(to left bottom, #EACB87, #E95C57)', border: 'none' } }>
+              <Card style={ {
+                background: 'linear-gradient(180deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                border: 'none'
+              } }
+              >
                 <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px' } }>Léo Poulin</h3></CardTitle>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Léo Poulin</h3></CardTitle>
                   <CardSubtitle><h4>Dev Back End Python & Architecture Embarquée</h4></CardSubtitle>
                 </CardBody>
                 <Img width="100%" src={ Leo } alt="Card image cap" />
@@ -93,11 +105,15 @@ export default class myValues extends PureComponent {
               </Card>
             </Col>
           </Col>
-          <Col xl={ 4 } lg={ 4 } md={ 4 } sm={ 12 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
+          <Col xl={ 4 } lg={ 4 } md={ 6 } sm={ 12 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
             <Col style={ { marginBottom: '40px' } }>
-              <Card style={ { background: 'linear-gradient(to right bottom, #EACB87, #E95C57)', border: 'none' } }>
+              <Card style={ {
+                background: 'linear-gradient(240deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                border: 'none'
+              } }
+              >
                 <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px' } }>Hadrien Daures</h3></CardTitle>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Hadrien Daures</h3></CardTitle>
                   <CardSubtitle><h4>Architecte et ingénieur serveur</h4></CardSubtitle>
                 </CardBody>
                 <Img width="100%" src={ Hadrien } alt="Card image cap" />
@@ -116,9 +132,13 @@ export default class myValues extends PureComponent {
               </Card>
             </Col>
             <Col style={ { marginBottom: '40px' } }>
-              <Card style={ { background: 'linear-gradient(to right top, #EACB87, #E95C57)', border: 'none' } }>
+              <Card style={ {
+                background: 'linear-gradient(300deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                border: 'none'
+              } }
+              >
                 <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px' } }>Rémy Villulles</h3></CardTitle>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Rémy Villulles</h3></CardTitle>
                   <CardSubtitle><h4>Développeur Android</h4></CardSubtitle>
                 </CardBody>
                 <Img width="100%" src={ Remy } alt="Card image cap" />
@@ -132,9 +152,13 @@ export default class myValues extends PureComponent {
               </Card>
             </Col>
             <Col style={ { marginBottom: '40px' } }>
-              <Card style={ { background: 'linear-gradient(to left bottom, #EACB87, #E95C57)', border: 'none' } }>
+              <Card style={ {
+                background: 'linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                border: 'none'
+              } }
+              >
                 <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px' } }>Fabien Santoni</h3></CardTitle>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Fabien Santoni</h3></CardTitle>
                   <CardSubtitle><h4>Développeur IOS</h4></CardSubtitle>
                 </CardBody>
                 <Img width="100%" src={ Fabien } alt="Card image cap" />
@@ -149,11 +173,16 @@ export default class myValues extends PureComponent {
               </Card>
             </Col>
           </Col>
-          <Col xl={ 4 } lg={ 4 } md={ 4 } sm={ 12 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
+          <Col xl={ 4 } lg={ 4 } md={ 6 } sm={ 12 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
             <Col style={ { marginBottom: '40px' } }>
-              <Card style={ { background: 'linear-gradient(to right bottom, #EACB87, #E95C57)', border: 'none' } }>
+              <Card style={ {
+                background: 'linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                border: 'none'
+              } }
+              >
                 <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px' } }>Julien Longayrou</h3></CardTitle>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Julien Longayrou</h3>
+                  </CardTitle>
                   <CardSubtitle><h4>Développeur de l'intranet-gérant</h4></CardSubtitle>
                 </CardBody>
                 <Img width="100%" src={ Julien } alt="Card image cap" />
@@ -168,9 +197,13 @@ export default class myValues extends PureComponent {
               </Card>
             </Col>
             <Col style={ { marginBottom: '40px' } }>
-              <Card style={ { background: 'linear-gradient(to right top, #EACB87, #E95C57)', border: 'none' } }>
+              <Card style={ {
+                background: 'linear-gradient(120deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                border: 'none'
+              } }
+              >
                 <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px' } }>Alexandre Rocat</h3></CardTitle>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Alexandre Rocat</h3></CardTitle>
                   <CardSubtitle><h4>Développeur de l'intranet-gérant</h4></CardSubtitle>
                 </CardBody>
                 <Img width="100%" src={ Rocat } alt="Card image cap" />
