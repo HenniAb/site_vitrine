@@ -10,6 +10,7 @@ import Header from 'COMPONENTS/header';
 import Footer from 'COMPONENTS/footer';
 
 import HomePage from './HomePage';
+import Application from './Applications';
 import Team from './Team';
 import Media from './Media';
 import Contacts from './Contacts';
@@ -35,6 +36,7 @@ const App = props => (
         <Header />
         <Switch>
           <Route exact path="/" component={ HomePage } />
+          <Route exact path="/application" component={ Application } />
           <Route exact path="/salles" component={ HomePage } />
           <Route exact path="/valeurs" component={ Team } />
           <Route exact path="/avis" component={ HomePage } />

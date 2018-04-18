@@ -53,9 +53,16 @@ export default class HeaderLinks extends PureComponent {
           </NavbarBrand>
           <NavbarToggler onClick={ this.toggle } />
           <Collapse className="navbarCollapseCf" isOpen={ this.state.isOpen } navbar>
-            <Nav className="ml-auto " navbar>
+            <Nav
+              className="ml-auto"
+              navbar
+              style={ { textAlign: 'center' } }
+            >
               <NavLink href="/" className="navbarLinksCf">
-                <span className="navbarLinksTextCf">Présentation de la solution</span>
+                <span className="navbarLinksTextCf">Notre Solution</span>
+              </NavLink>
+              <NavLink href="/application" className="navbarLinksCf">
+                <span className="navbarLinksTextCf">Nos Applications</span>
               </NavLink>
               <NavLink href="/salles" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Nos salles</span>
