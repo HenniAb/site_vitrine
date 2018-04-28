@@ -43,6 +43,27 @@ header *, .rowHomepage *, footer *{
 
 /*************************************************/
 
+/*************************************************/
+/* Partie Nos Salles */
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*************************************************/
+
+
+
 .navbarCf {
     margin: auto;
     min-height: 55px;
@@ -134,7 +155,6 @@ img {
     width: 80%!important;
     flex: 0 0 auto !important;
 }
-
 
 @keyframes img-ani {
     from {

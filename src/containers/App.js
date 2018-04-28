@@ -12,6 +12,7 @@ import Footer from 'COMPONENTS/footer';
 import HomePage from './HomePage';
 import Application from './Applications';
 import Team from './Team';
+import Hall from './Hall';
 import Media from './Media';
 import Contacts from './Contacts';
 import NotFound from './NotFound';
@@ -37,7 +38,7 @@ const App = props => (
         <Switch>
           <Route exact path="/" component={ HomePage } />
           <Route exact path="/application" component={ Application } />
-          <Route exact path="/salles" component={ HomePage } />
+          <Route exact path="/salles" component={ Hall } />
           <Route exact path="/valeurs" component={ Team } />
           <Route exact path="/avis" component={ HomePage } />
           <Route exact path="/media" component={ Media } />

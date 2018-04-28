@@ -67,6 +67,8 @@ export default class myValues extends PureComponent {
                       </Col>
                     </Row>
                   </FormGroup>
+                  { /* <div className="g-recaptcha" data-sitekey="your_site_key">test</div> */ }
+                  <br />
                   <Button>Submit</Button>
                 </Form>
               </Col>
