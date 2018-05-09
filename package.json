@@ -10,7 +10,7 @@
     "dev": "node ./bin/dev.js",
     "build": "node ./bin/build.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "dependencies": {
