@@ -111,7 +111,7 @@ export default class myValues extends PureComponent {
             <Col>
               <Form
                 style={ {
-                  maxWidth: '700px'
+                  maxWidth: '700px',
                   margin: 'auto',
                   paddingBottom: '90px',
                   fontFamily: 'Raleway, sans-serif'
