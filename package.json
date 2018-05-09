@@ -8,7 +8,9 @@
     "postinstall": "npm run build",
     "start": "node ./bin/www --babel",
     "dev": "node ./bin/dev.js",
-    "build": "node ./bin/build.js"
+    "build": "node ./bin/build.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "dependencies": {
