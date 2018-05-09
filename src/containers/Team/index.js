@@ -144,8 +144,8 @@ export default class myValues extends PureComponent {
                 </CardBody>
                 <Img width="100%" src={ Julien } alt="Card image cap" />
                 <CardBody>
-                  <CardText><h5>En charge de la plateforme pour les gérants de salles, Julien réfléchis et optimise une
-                    plateforme parfaitement conçus pour un administrateur de salle de sport.</h5></CardText>
+                  <CardText><h5>En charge de la plateforme pour les gérants de salles, Julien réfléchit et optimise une
+                    plateforme parfaitement conçue pour un administrateur de salle de sport.</h5></CardText>
                   <CardText>Proverbe favoris :</CardText>
                   <CardText><i>"C'est dans l'effort que l'on trouve la satisfaction et non dans la réussite. Un plein
                     effort est une pleine victoire."</i> - Gandhi</CardText>
