@@ -1,11 +1,9 @@
 import React, { PureComponent } from 'react';
-import { DefaultPlayer as Video } from 'react-html5video';
 import { Container, Row, Col } from 'react-grid-system';
 import Carousel from 'nuka-carousel';
 
 import '../../styles/css/react-html5video.css';
 
-import presVideo from '../../assets/video/firstVideo.mp4';
 import pic1 from '../../assets/images/caroussel/1.jpg';
 import pic2 from '../../assets/images/caroussel/2.jpg';
 import pic3 from '../../assets/images/caroussel/3.jpg';
@@ -42,16 +40,16 @@ export default class media extends PureComponent {
             </Row>
           </Col>
         </Row>
-        <Row style={ { padding: '30px 0 30px 0' } }>
-          <Col>
-            <Video
-              controls={ ['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen'] }
-              poster={ '/img/posterVideo.jpg' }
-              style={ { maxHeight: '75vh' } }
-            >
-              <source src={ presVideo } type="video/mp4" />
-            </Video>
-          </Col>
+        <Row style={ { padding: '30px 15px' } }>
+          <div className="embed-responsive embed-responsive-16by9">
+            <iframe
+              title="Centrale Fitness vidéo de présentation"
+              className="embed-responsive-item"
+              src="https://www.youtube.com/embed/4Hl1WAGKjMc"
+              allowFullScreen
+              frameBorder="0"
+            />
+          </div>
         </Row>
       </Container>
     );

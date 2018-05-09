@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import SVGInline from 'react-svg-inline';
 import logo from 'src/assets/images/logoCf.svg';
 
-import cycle from 'src/assets/images/iconesHomepage/cycle.png';
+import cycle from 'src/assets/images/iconesHomepage/car.png';
 import module from 'src/assets/images/iconesHomepage/module.png';
 import ecology from 'src/assets/images/iconesHomepage/ecology.png';
 import money from 'src/assets/images/iconesHomepage/money.png';

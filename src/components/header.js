@@ -70,9 +70,9 @@ export default class HeaderLinks extends PureComponent {
               <NavLink href="/valeurs" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">L'équipe</span>
               </NavLink>
-              <NavLink href="/avis" className="navbarLinksCf">
+              { /* <NavLink href="/avis" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Avis des utilisateurs</span>
-              </NavLink>
+              </NavLink> */ }
               <NavLink href="/media" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Média</span>
               </NavLink>

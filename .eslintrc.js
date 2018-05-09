@@ -60,6 +60,6 @@ module.exports = {
     "react/forbid-prop-types": [0],
     "react/no-unescaped-entities" : 0,
     "react/jsx-curly-spacing": 0,
-    'react/style-prop-object': 0,
+    'react/style-prop-object': 0
   }
 };

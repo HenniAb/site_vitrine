@@ -6,6 +6,8 @@ import Fb from '../assets/images/iconesFooter/004-facebook.svg';
 import Instagram from '../assets/images/iconesFooter/instagram.svg';
 import Twitter from '../assets/images/iconesFooter/002-twitter-logo-silhouette.svg';
 import Yt from '../assets/images/iconesFooter/001-youtube.svg';
+import atContact from '../assets/images/iconesFooter/email.svg';
+
 
 export default class myFooter extends PureComponent {
   render() {
@@ -31,12 +33,13 @@ export default class myFooter extends PureComponent {
             >
               <Row>
                 <Col>
-                  <span><b>Notre Philosophie</b></span>
+                  <h4>Notre Philosophie</h4>
                 </Col>
               </Row>
               <Row style={ { height: '90%', minHeight: '75px' } }>
                 <Col style={ { margin: 'auto' } }>
-                  <span>Centrale Fitness accompagne les particuliers et les gérants de salles à une approche plus ludique et viable du sport en salle !</span>
+                  <h5>Centrale Fitness accompagne les particuliers et les gérants de salles à une approche plus ludique
+                    et viable du sport en salle !</h5>
                 </Col>
               </Row>
             </Col>
@@ -51,11 +54,21 @@ export default class myFooter extends PureComponent {
             >
               <Row>
                 <Col>
-                  <span><b>Contacts</b></span>
+                  <h4>Contacts</h4>
                 </Col>
               </Row>
-              <Row style={ { height: '90%', minHeight: '75px' } }>
-                <Col style={ { margin: 'auto', lineHeight: '40px' } }>
+              <Row style={ { margin: '15px 0' } }>
+                <Col>
+                  <SVGInline
+                    fill={ 'white' }
+                    height="100px"
+                    alt="contacts"
+                    svg={ atContact }
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col style={ { margin: 'auto', lineHeight: '25px' } }>
                   <Row>
                     <Col>
                       <span>Téléphone : <span className="normalFont">+000-000-000</span></span>
@@ -63,7 +76,7 @@ export default class myFooter extends PureComponent {
                   </Row>
                   <Row>
                     <Col>
-                      <span>Email : centrale<span className="normalFont">@</span>fitness.com</span>
+                      <span>Email : centrale-fitness<span className="normalFont">@</span>outlook.fr</span>
                     </Col>
                   </Row>
                 </Col>
@@ -80,7 +93,7 @@ export default class myFooter extends PureComponent {
             >
               <Row style={ { marginBottom: '15px' } }>
                 <Col>
-                  <span><b>Restez connectés !</b></span>
+                  <h4>Restez connectés !</h4>
                 </Col>
               </Row>
               <Row>
@@ -90,7 +103,7 @@ export default class myFooter extends PureComponent {
               </Row>
               <Row>
                 <Col>
-                  <span><b>Centrale Fitness</b></span>
+                  <span>Centrale Fitness</span>
                 </Col>
               </Row>
               <Row className="socialIconsFooterRow">
@@ -98,7 +111,7 @@ export default class myFooter extends PureComponent {
                   className="socialIconsFooterCol"
                   style={ { marginRight: '18px' } }
                 >
-                  <a href="https://www.facebook.com/">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/centralefitness/">
                     <SVGInline
                       className="socialIconsFooter"
                       svg={ Fb }
@@ -109,7 +122,7 @@ export default class myFooter extends PureComponent {
                   className="socialIconsFooterCol"
                   style={ { marginRight: '18px' } }
                 >
-                  <a href="https://www.instagram.com/">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
                     <SVGInline
                       className="socialIconsFooter"
                       svg={ Instagram }
@@ -120,7 +133,7 @@ export default class myFooter extends PureComponent {
                   className="socialIconsFooterCol"
                   style={ { marginRight: '18px' } }
                 >
-                  <a href="https://twitter.com/">
+                  <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/">
                     <SVGInline
                       className="socialIconsFooter"
                       svg={ Twitter }
@@ -131,7 +144,7 @@ export default class myFooter extends PureComponent {
                   className="socialIconsFooterCol"
                   style={ { marginRight: '18px' } }
                 >
-                  <a href="https://www.youtube.com/">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">
                     <SVGInline
                       className="socialIconsFooter"
                       svg={ Yt }
@@ -143,10 +156,10 @@ export default class myFooter extends PureComponent {
           </Row>
           <Row style={ secondRow }>
             <Col style={ { textAlign: 'left' } }>
-              <span><b><span className="normalFont">@</span>Centrale Fitness<span className="normalFont"> 2018</span></b></span>
+              <span className="normalFont">@</span>Centrale Fitness<span className="normalFont"> 2018</span>
             </Col>
             <Col style={ { textAlign: 'right' } }>
-              <span><b>Mentions légales</b></span>
+              <span>Mentions légales</span>
             </Col>
           </Row>
         </Container>

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
-import { Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import Img from 'react-image';
 
 import Nils from '../../assets/images/team/photo3.jpg';
@@ -19,7 +19,7 @@ export default class myValues extends PureComponent {
         <Row style={ {
           paddingTop: '90px',
           color: 'white',
-          backgroundImage: 'linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)'
+          backgroundImage: 'linear-gradient(to left top, rgb(58, 97, 134), rgb(137, 37, 62))'
         } }
         >
           <Col>
@@ -39,10 +39,10 @@ export default class myValues extends PureComponent {
           </Col>
         </Row>
         <Row style={ { paddingTop: '30px', color: 'white' } }>
-          <Col xl={ 4 } lg={ 4 } md={ 6 } sm={ 12 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
+          <Col xl={ 3 } lg={ 3 } md={ 4 } sm={ 6 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
             <Col style={ { marginBottom: '40px' } }>
               <Card style={ {
-                background: 'linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                backgroundImage: 'linear-gradient(60deg, #355c7d, #6c5b7b, #c06c84)',
                 border: 'none'
               } }
               >
@@ -57,13 +57,12 @@ export default class myValues extends PureComponent {
                   <CardText>Proverbe favoris :</CardText>
                   <CardText><i>"Choisissez un travail que vous aimez et vous n'aurez pas à travailler un seul jour de
                     votre vie."</i> - Confucius</CardText>
-                  <CardLink href="#">Voir plus</CardLink>
                 </CardBody>
               </Card>
             </Col>
             <Col style={ { marginBottom: '40px' } }>
               <Card style={ {
-                background: 'linear-gradient(120deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                backgroundImage: 'linear-gradient(60deg, #355c7d, #6c5b7b, #c06c84)',
                 border: 'none'
               } }
               >
@@ -80,35 +79,15 @@ export default class myValues extends PureComponent {
                   <CardText>Proverbe favoris :</CardText>
                   <CardText><i>"L'expérience nous enseigne à être prudent, le jugement seul nous apprend à être
                     sage."</i> - H. de Charency</CardText>
-                  <CardLink href="#">Voir plus</CardLink>
                 </CardBody>
               </Card>
             </Col>
-            <Col style={ { marginBottom: '40px' } }>
-              <Card style={ {
-                background: 'linear-gradient(180deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
-                border: 'none'
-              } }
-              >
-                <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Léo Poulin</h3></CardTitle>
-                  <CardSubtitle><h4>Dev Back End Python & Architecture Embarquée</h4></CardSubtitle>
-                </CardBody>
-                <Img width="100%" src={ Leo } alt="Card image cap" />
-                <CardBody>
-                  <CardText><h5>En charge de la coordination des systèmes embarqués et de l'architecture logicielle, Léo
-                    permet de créer une solution performante et respectueuse de l'environnement.</h5></CardText>
-                  <CardText>Proverbe favoris :</CardText>
-                  <CardText><i>"La seule chose meilleure qu'une pizza est une pizza gratuite"</i> - léo</CardText>
-                  <CardLink href="#">Voir plus</CardLink>
-                </CardBody>
-              </Card>
-            </Col>
+
           </Col>
-          <Col xl={ 4 } lg={ 4 } md={ 6 } sm={ 12 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
+          <Col xl={ 3 } lg={ 3 } md={ 4 } sm={ 6 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
             <Col style={ { marginBottom: '40px' } }>
               <Card style={ {
-                background: 'linear-gradient(240deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                backgroundImage: 'linear-gradient(60deg, #355c7d, #6c5b7b, #c06c84)',
                 border: 'none'
               } }
               >
@@ -127,13 +106,12 @@ export default class myValues extends PureComponent {
                   <CardText><i>"La communication est une science difficile. Ce n'est pas une science exacte. Ca
                     s'apprend
                     et ça se cultive."</i> - Jean-Luc Lagardère</CardText>
-                  <CardLink href="#">Voir plus</CardLink>
                 </CardBody>
               </Card>
             </Col>
             <Col style={ { marginBottom: '40px' } }>
               <Card style={ {
-                background: 'linear-gradient(300deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                backgroundImage: 'linear-gradient(60deg, #355c7d, #6c5b7b, #c06c84)',
                 border: 'none'
               } }
               >
@@ -147,36 +125,15 @@ export default class myValues extends PureComponent {
                   <CardText>Proverbe favoris :</CardText>
                   <CardText><i>"La meilleure condition de travail, c'est les vacances."</i> - Jean-Marie
                     Gourio</CardText>
-                  <CardLink href="#">Voir plus</CardLink>
                 </CardBody>
               </Card>
             </Col>
-            <Col style={ { marginBottom: '40px' } }>
-              <Card style={ {
-                background: 'linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
-                border: 'none'
-              } }
-              >
-                <CardBody>
-                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Fabien Santoni</h3></CardTitle>
-                  <CardSubtitle><h4>Développeur IOS</h4></CardSubtitle>
-                </CardBody>
-                <Img width="100%" src={ Fabien } alt="Card image cap" />
-                <CardBody>
-                  <CardText><h5>En charge du développement de l'application IOS, Fabien conforte aussi l'équipe sur le
-                    développement et les choix du design.</h5></CardText>
-                  <CardText>Proverbe favoris :</CardText>
-                  <CardText><i>"La chose la plus importante en communication, c'est d'entendre ce qui n'est pas
-                    dit."</i> - Peter Drucker</CardText>
-                  <CardLink href="#">Voir plus</CardLink>
-                </CardBody>
-              </Card>
-            </Col>
+
           </Col>
-          <Col xl={ 4 } lg={ 4 } md={ 6 } sm={ 12 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
+          <Col xl={ 3 } lg={ 3 } md={ 4 } sm={ 6 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
             <Col style={ { marginBottom: '40px' } }>
               <Card style={ {
-                background: 'linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                backgroundImage: 'linear-gradient(60deg, #355c7d, #6c5b7b, #c06c84)',
                 border: 'none'
               } }
               >
@@ -192,13 +149,12 @@ export default class myValues extends PureComponent {
                   <CardText>Proverbe favoris :</CardText>
                   <CardText><i>"C'est dans l'effort que l'on trouve la satisfaction et non dans la réussite. Un plein
                     effort est une pleine victoire."</i> - Gandhi</CardText>
-                  <CardLink href="#">Voir plus</CardLink>
                 </CardBody>
               </Card>
             </Col>
             <Col style={ { marginBottom: '40px' } }>
               <Card style={ {
-                background: 'linear-gradient(120deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)',
+                backgroundImage: 'linear-gradient(60deg, #355c7d, #6c5b7b, #c06c84)',
                 border: 'none'
               } }
               >
@@ -212,7 +168,47 @@ export default class myValues extends PureComponent {
                     intelligence.</h5></CardText>
                   <CardText>Proverbe favoris :</CardText>
                   <CardText><i>"Développer c'est passer du temps à en gagner."</i> - Rocat</CardText>
-                  <CardLink href="#">Voir plus</CardLink>
+                </CardBody>
+              </Card>
+            </Col>
+          </Col>
+          <Col xl={ 3 } lg={ 3 } md={ 4 } sm={ 6 } xs={ 12 } offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }>
+            <Col style={ { marginBottom: '40px' } }>
+              <Card style={ {
+                backgroundImage: 'linear-gradient(60deg, #355c7d, #6c5b7b, #c06c84)',
+                border: 'none'
+              } }
+              >
+                <CardBody>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Fabien Santoni</h3></CardTitle>
+                  <CardSubtitle><h4>Développeur IOS</h4></CardSubtitle>
+                </CardBody>
+                <Img width="100%" src={ Fabien } alt="Card image cap" />
+                <CardBody>
+                  <CardText><h5>En charge du développement de l'application IOS, Fabien conforte aussi l'équipe sur le
+                    développement et les choix du design.</h5></CardText>
+                  <CardText>Proverbe favoris :</CardText>
+                  <CardText><i>"La chose la plus importante en communication, c'est d'entendre ce qui n'est pas
+                    dit."</i> - Peter Drucker</CardText>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col style={ { marginBottom: '40px' } }>
+              <Card style={ {
+                backgroundImage: 'linear-gradient(60deg, #355c7d, #6c5b7b, #c06c84)',
+                border: 'none'
+              } }
+              >
+                <CardBody>
+                  <CardTitle><h3 style={ { marginBottom: '30px', fontWeight: 'bold' } }>Léo Poulin</h3></CardTitle>
+                  <CardSubtitle><h4>Dev Back End Python & Architecture Embarquée</h4></CardSubtitle>
+                </CardBody>
+                <Img width="100%" src={ Leo } alt="Card image cap" />
+                <CardBody>
+                  <CardText><h5>En charge de la coordination des systèmes embarqués et de l'architecture logicielle, Léo
+                    permet de créer une solution performante et respectueuse de l'environnement.</h5></CardText>
+                  <CardText>Proverbe favoris :</CardText>
+                  <CardText><i>"La seule chose meilleure qu'une pizza est une pizza gratuite"</i> - léo</CardText>
                 </CardBody>
               </Card>
             </Col>

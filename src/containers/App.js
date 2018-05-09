@@ -40,7 +40,7 @@ const App = props => (
           <Route exact path="/application" component={ Application } />
           <Route exact path="/salles" component={ Hall } />
           <Route exact path="/valeurs" component={ Team } />
-          <Route exact path="/avis" component={ HomePage } />
+          { /* <Route exact path="/avis" component={ HomePage } /> */ }
           <Route exact path="/media" component={ Media } />
           <Route exact path="/contacts" component={ Contacts } />
           <Route component={ NotFound } />
