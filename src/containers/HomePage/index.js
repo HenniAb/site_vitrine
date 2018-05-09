@@ -6,7 +6,7 @@ import SVGInline from 'react-svg-inline';
 import logo from 'src/assets/images/logoCf.svg';
 
 import cycle from 'src/assets/images/iconesHomepage/car.png';
-import module from 'src/assets/images/iconesHomepage/module.png';
+import module from 'src/assets/images/iconesHomepage/moduleIcone.png';
 import ecology from 'src/assets/images/iconesHomepage/ecology.png';
 import money from 'src/assets/images/iconesHomepage/money.png';
 import cellPhone from 'src/assets/images/iphone_1.png';
