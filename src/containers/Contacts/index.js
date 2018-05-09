@@ -114,7 +114,7 @@ export default class myValues extends PureComponent {
                   maxWidth: '700px',
                   margin: 'auto',
                   paddingBottom: '90px',
-                  fontFamily: 'Raleway, sans-serif',
+                  fontFamily: 'Raleway, sans-serif'
                 } }
                 onSubmit={ this.handleSubmit }
               >
