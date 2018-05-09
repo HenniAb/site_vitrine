@@ -16,7 +16,7 @@ module.exports = {
       CONTAINERS: 'src/containers',
       REDUX: 'src/redux',
       UTILS: 'src/utils',
-      style: 'src/style',
+      style: 'src/style'
     },
     extensions: ['.js']
   },
