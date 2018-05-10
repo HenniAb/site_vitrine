@@ -212,9 +212,9 @@ export default class myValues extends PureComponent {
               </Col>
               <Col style={ { color: 'white' } }>
                 <h4 style={ { marginTop: '15px' } }>Par mail:</h4>
-                <h4 style={ { marginBottom: '100px' } }>centrale<span
+                <h4 style={ { marginBottom: '100px' } }>centrale-fitness<span
                   style={ { fontFamily: 'Circular,Helvetica,Arial,sans-serif' } }
-                >@</span>fitness.com</h4>
+                >@</span>outlook.fr</h4>
               </Col>
             </Col>
             <Col
