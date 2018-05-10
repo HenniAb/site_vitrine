@@ -55,7 +55,7 @@ module.exports = merge(base, {
     new webpack.optimize.CommonsChunkPlugin({ name: 'common', minChunks: 2 }),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      favicon: 'src/assets/images/favicon.jpg',
+      favicon: 'src/assets/favicons/favicon.ico',
       minify: {
         removeComments: true,
         collapseWhitespace: true,

@@ -2,8 +2,6 @@ import React, { PureComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import Carousel from 'nuka-carousel';
 
-import '../../styles/css/react-html5video.css';
-
 import pic1 from '../../assets/images/caroussel/1.jpg';
 import pic2 from '../../assets/images/caroussel/2.jpg';
 import pic3 from '../../assets/images/caroussel/3.jpg';

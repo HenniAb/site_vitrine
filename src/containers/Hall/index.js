@@ -136,12 +136,14 @@ export default class media extends PureComponent {
     console.log(user);
     axios.post('http://163.5.84.201:5540/notification', { user })
       .then((response) => {
+        console.log('La requête a bien été envoyé');
         console.log(response);
       })
       .catch((error) => {
+        console.log('La requête n\'a pas aboutis');
         console.log(error);
       });
-    return true;
+    return false;
   };
 
   render() {

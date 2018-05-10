@@ -69,7 +69,7 @@ export default class myBody extends PureComponent {
             <Row style={ { paddingTop: '56px', textAlign: 'center' } }>
               <Col
                 className="firstRowHomepage"
-                style={ { padding: '0' } }
+                style={ { padding: '0', minHeight: '400px' } }
               >
                 <Row>
                   <Col
@@ -107,7 +107,7 @@ export default class myBody extends PureComponent {
                 xs={ 12 }
                 offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
                 className="homepageIcones_1"
-                style={ { padding: '0' } }
+                style={ { padding: '15px 0' } }
               >
                 <Link
                   className="test6"
@@ -145,7 +145,7 @@ export default class myBody extends PureComponent {
                 xs={ 12 }
                 offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
                 className="homepageIcones_2"
-                style={ { padding: '0' } }
+                style={ { padding: '15px 0' } }
               >
                 <Link
                   style={ { top: '15px' } }
@@ -184,7 +184,7 @@ export default class myBody extends PureComponent {
                 xs={ 12 }
                 offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
                 className="homepageIcones_3"
-                style={ { padding: '0' } }
+                style={ { padding: '15px 0' } }
               >
                 <Link
                   style={ { top: '15px' } }
@@ -223,7 +223,7 @@ export default class myBody extends PureComponent {
                 xs={ 12 }
                 offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
                 className="homepageIcones_4"
-                style={ { padding: '0' } }
+                style={ { padding: '15px 0' } }
               >
                 <Link
                   style={ { top: '15px' } }
@@ -271,7 +271,8 @@ export default class myBody extends PureComponent {
               color: 'black',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              padding: '15px 0'
             } }
           >
             <Col
@@ -366,7 +367,8 @@ export default class myBody extends PureComponent {
               color: 'black',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              padding: '15px 0'
             } }
           >
             <Col
@@ -398,13 +400,13 @@ export default class myBody extends PureComponent {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              height: '90vh'
+              height: '70vh'
             } }
           >
             <Col>
               <img
                 style={ {
-                  maxHeight: '90vh',
+                  maxHeight: '70vh',
                   maxWidth: '100%'
                 } }
                 alt="module centrale fitness"
@@ -472,7 +474,8 @@ export default class myBody extends PureComponent {
               color: 'black',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              padding: '15px 0'
             } }
           >
             <Col
@@ -509,13 +512,13 @@ export default class myBody extends PureComponent {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              height: '90vh'
+              height: '70vh'
             } }
           >
             <Col>
               <img
                 style={ {
-                  maxHeight: '90vh',
+                  maxHeight: '70vh',
                   maxWidth: '100%'
                 } }
                 alt="ecology centrale fitness"
@@ -583,7 +586,8 @@ export default class myBody extends PureComponent {
               color: 'black',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              padding: '15px 0'
             } }
           >
             <Col
@@ -611,14 +615,14 @@ export default class myBody extends PureComponent {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              height: '90vh'
+              height: '70vh'
             } }
           >
             <Col>
               <img
                 style={ {
-                  maxHeight: '90vh',
-                  maxWidth: '100%'
+                  maxHeight: '70vh',
+                  maxWidth: '75%'
                 } }
                 alt="decrease money centrale fitness"
                 src={ piggyBank }
