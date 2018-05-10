@@ -385,7 +385,7 @@ export default class myBody extends PureComponent {
                 afin
                 de baisser le coût globale de l'électricité consommée par la salle.</p>
               <h5 style={ { paddingTop: '15px', fontWeight: 'bold' } }>Une approche ludique pour les utilisateurs</h5>
-              <p>Cette productiion d'électricité pourra être consulter par l'utilisateur en temps
+              <p>Cette production d'électricité pourra être consulter par l'utilisateur en temps
                 réel sur son application.</p>
             </Col>
           </Col>
