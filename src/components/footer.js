@@ -122,7 +122,7 @@ export default class myFooter extends PureComponent {
                   className="socialIconsFooterCol"
                   style={ { marginRight: '18px' } }
                 >
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/centraleftiness/">
                     <SVGInline
                       className="socialIconsFooter"
                       svg={ Instagram }
@@ -133,7 +133,7 @@ export default class myFooter extends PureComponent {
                   className="socialIconsFooterCol"
                   style={ { marginRight: '18px' } }
                 >
-                  <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/">
+                  <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/FitnessCentrale">
                     <SVGInline
                       className="socialIconsFooter"
                       svg={ Twitter }
