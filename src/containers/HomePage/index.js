@@ -60,7 +60,8 @@ export default class myBody extends PureComponent {
     const h2Css1 = {
       letterSpacing: '-0.02em !important',
       fontSize: '40px',
-      fontFamily: 'BjornLight'
+      fontFamily: 'BjornLight',
+      padding: '0 15px'
     };
     return (
       <Container fluid style={ containerCss }>
@@ -91,7 +92,7 @@ export default class myBody extends PureComponent {
                 </Row>
                 <Row>
                   <Col className="alignItemsBg">
-                    <h3 style={ { width: '90%', margin: 'auto' } }>La solution innovante pour vous motiver au sport tout
+                    <h3 style={ { width: '90%', margin: 'auto', padding: '0 15px' } }>La solution innovante pour vous motiver au sport tout
                       en
                       réduisant vos dépenses</h3>
                   </Col>
@@ -400,13 +401,13 @@ export default class myBody extends PureComponent {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              height: '70vh'
+              height: '90vh'
             } }
           >
             <Col>
               <img
                 style={ {
-                  maxHeight: '70vh',
+                  maxHeight: '90vh',
                   maxWidth: '100%'
                 } }
                 alt="module centrale fitness"
@@ -512,13 +513,13 @@ export default class myBody extends PureComponent {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              height: '70vh'
+              height: '90vh'
             } }
           >
             <Col>
               <img
                 style={ {
-                  maxHeight: '70vh',
+                  maxHeight: '90vh',
                   maxWidth: '100%'
                 } }
                 alt="ecology centrale fitness"
@@ -615,14 +616,14 @@ export default class myBody extends PureComponent {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              height: '70vh'
+              height: '90vh'
             } }
           >
             <Col>
               <img
                 style={ {
-                  maxHeight: '70vh',
-                  maxWidth: '75%'
+                  maxHeight: '90vh',
+                  maxWidth: '100%'
                 } }
                 alt="decrease money centrale fitness"
                 src={ piggyBank }

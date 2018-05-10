@@ -15,7 +15,7 @@ export default class media extends PureComponent {
       <Container fluid>
         <Row style={ {
           paddingTop: '90px',
-          background: 'linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)'
+          background: 'linear-gradient(60deg, #355c7d, #6c5b7b, #c06c84)'
         } }
         >
           <Col>
