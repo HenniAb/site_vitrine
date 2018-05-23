@@ -17,7 +17,6 @@ export default class myValues extends PureComponent {
 
     };
   }
-
   componentWillMount() {
     this.setState({
       userEmail: null,
