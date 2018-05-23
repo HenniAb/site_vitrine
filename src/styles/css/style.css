@@ -244,6 +244,7 @@ img {
 .homepageColText {
     width: 80% !important;
     flex: 0 0 auto !important;
+    padding: 30px 0;
 }
 
 @keyframes img-ani {

@@ -314,44 +314,6 @@ export default class myBody extends PureComponent {
             </Col>
           </Col>
         </Row>
-        { /* <Row className="homePageElement">
-          <Col
-            style={ colCss }
-            xl={ 8 }
-            lg={ 8 }
-            md={ 8 }
-            sm={ 10 }
-            xs={ 10 }
-            offset={ { sm: 1, xs: 1, md: 0, xl: 0, lg: 0 } }
-          >
-            <Col>
-              <h2 style={ h2Css }>Le sport ludique qui met en avant l'écologie et la fidélisation</h2>
-              <h3 style={ h3Css1 }>Centrale fitness est une solution destinée aux salles de sport.
-                Cette écosystème permet de récupérer l’énergie produite par les sportifs, sous forme
-                d’électricité afin d'avantager les clients ainsi que les gérants des salles de sport.</h3>
-              <h3 style={ h3Css2 }>Notre objectif à long terme est de réduire la consommation des salles de sport
-                qui sont des infrastructures particulièrement consommatrices en énergie.</h3>
-            </Col>
-          </Col>
-          <Col
-            style={ colCss }
-            xl={ 4 }
-            lg={ 4 }
-            md={ 4 }
-            sm={ 10 }
-            xs={ 10 }
-            offset={ { sm: 1, xs: 1, md: 0, xl: 0, lg: 0 } }
-          >
-            <Col>
-              <Img
-                style={ imageCss }
-                className={ 'img-fluid img-responsive' }
-                alt={ 'Responsive image' }
-                src={ cellPhone }
-              />
-            </Col>
-          </Col>
-        </Row> */ }
         <Row
           id="anchor2"
           style={ { background: 'linear-gradient(to left bottom, #a6c0fe, #f68084) no-repeat' } }
@@ -383,9 +345,9 @@ export default class myBody extends PureComponent {
               <h5 style={ { fontWeight: 'bold' } }>Une réduction des coûts pour la salle</h5>
               <p>A terme l'électricité produite sera directement réinjectée dans la salle de sport
                 afin
-                de baisser le coût globale de l'électricité consommée par la salle.</p>
+                de baisser le coût global de l'électricité consommée par la salle.</p>
               <h5 style={ { paddingTop: '15px', fontWeight: 'bold' } }>Une approche ludique pour les utilisateurs</h5>
-              <p>Cette production d'électricité pourra être consulter par l'utilisateur en temps
+              <p>Cette production d'électricité pourra être consultée par l'utilisateur en temps
                 réel sur son application.</p>
             </Col>
           </Col>
@@ -416,51 +378,6 @@ export default class myBody extends PureComponent {
             </Col>
           </Col>
         </Row>
-        { /*
-         <Row id="anchor2" className="homePageElement">
-          <Col
-            xl={ 8 }
-            lg={ 8 }
-            md={ 8 }
-            sm={ 10 }
-            xs={ 10 }
-            offset={ { sm: 1, xs: 1, md: 0, xl: 0, lg: 0 } }
-            push={ { xl: 4, lg: 4, md: 4 } }
-            style={ colCss }
-          >
-            <Col>
-              <h2 style={ h2Css }>Le module de récupération d'énergie.</h2>
-              <h3 style={ h3Css1 }>Ce module permettra à son utilisateur de convertir l'énergie mécanique en
-                électricité viable et utilisable directement.</h3>
-              <h3 style={ h3Css2 }>A terme l'électricité produite sera directement réinjectée dans la salle de sport
-                afin
-                de baisser le coût globale de l'électricité consommée par la salle.</h3>
-              <h3 style={ h3Css2 }>Cette productivité pourra être consulter par l'utilisateur directement et en temps
-                réel
-                sur son application smartphone.</h3>
-            </Col>
-          </Col>
-          <Col
-            style={ colCss }
-            xl={ 4 }
-            lg={ 4 }
-            md={ 4 }
-            sm={ 10 }
-            xs={ 10 }
-            offset={ { sm: 1, xs: 1, md: 0, xl: 0, lg: 0 } }
-            pull={ { xl: 8, lg: 8, md: 8 } }
-          >
-            <Col>
-              <Img
-                style={ imageCss }
-                className={ 'img-fluid img-responsive' }
-                alt={ 'Responsive image' }
-                src={ engine }
-              />
-            </Col>
-          </Col>
-        </Row>
-        */ }
         <Row
           id="anchor3"
         >
@@ -490,16 +407,6 @@ export default class myBody extends PureComponent {
               <h5 style={ { fontWeight: 'bold', marginTop: '15px' } }>Une réflexion écologique</h5>
               <p>Cette expérience unique en son genre a aussi pour but de sensibiliser les utilisateurs à la
                 consommation d'énergie.</p>
-              { /* <h2>L'écologie : un pilier de l'écosystème Centrale Fitness</h2>
-              <h3>Depuis les préquelles de sa création, les fondateurs de Centrale Fitness voulaient
-                répondre aux problématiques actuelles et futurs de l'environnement.</h3>
-              <h3>Produire une énergie renouvelable et réutilisable directement en salle de sport
-                permet
-                de répondre en partie à ce problème.</h3>
-              <h3>Cette acte sportif en faveur de l'environnement permet aussi de sensibiliser les
-                populations à ce que représente en terme d'énergie l'éclairage par le biais d'une ampoule ou bien un
-                écran de télévision allumée.</h3> */ }
-
             </Col>
           </Col>
           <Col
@@ -528,49 +435,6 @@ export default class myBody extends PureComponent {
             </Col>
           </Col>
         </Row>
-        { /*
-                <Row id="anchor3" className="homePageElement">
-          <Col
-            style={ colCss }
-            xl={ 8 }
-            lg={ 8 }
-            md={ 8 }
-            sm={ 10 }
-            xs={ 10 }
-            offset={ { sm: 1, xs: 1, md: 0, xl: 0, lg: 0 } }
-          >
-            <Col>
-              <h2 style={ h2Css }>L'écologie : un pilier de l'écosystème Centrale Fitness</h2>
-              <h3 style={ h3Css1 }>Depuis les préquelles de sa création, les fondateurs de Centrale Fitness voulaient
-                répondre aux problématiques actuelles et futurs de l'environnement.</h3>
-              <h3 style={ h3Css2 }>Produire une énergie renouvelable et réutilisable directement en salle de sport
-                permet
-                de répondre en partie à ce problème.</h3>
-              <h3 style={ h3Css2 }>Cette acte sportif en faveur de l'environnement permet aussi de sensibiliser les
-                populations à ce que représente en terme d'énergie l'éclairage par le biais d'une ampoule ou bien un
-                écran de télévision allumée.</h3>
-            </Col>
-          </Col>
-          <Col
-            style={ colCss }
-            xl={ 4 }
-            lg={ 4 }
-            md={ 4 }
-            sm={ 10 }
-            xs={ 10 }
-            offset={ { sm: 1, xs: 1, md: 0, xl: 0, lg: 0 } }
-          >
-            <Col>
-              <Img
-                style={ imageCss }
-                className={ 'img-fluid img-responsive' }
-                alt={ 'Responsive image' }
-                src={ green }
-              />
-            </Col>
-          </Col>
-        </Row>
-        */ }
         <Row
           id="anchor4"
           style={ { background: 'linear-gradient(to left, #cfc7f8 0%, #ebbba7 100%)' } }
@@ -631,50 +495,6 @@ export default class myBody extends PureComponent {
             </Col>
           </Col>
         </Row>
-
-        { /* <Row id="anchor4" className="homePageElement">
-          <Col
-            style={ colCss }
-            xl={ 8 }
-            lg={ 8 }
-            md={ 8 }
-            sm={ 10 }
-            xs={ 10 }
-            offset={ { sm: 1, xs: 1, md: 0, xl: 0, lg: 0 } }
-            push={ { xl: 4, lg: 4, md: 4 } }
-          >
-            <Col>
-              <h2 style={ h2Css }>Pédalez plus pour économisez plus</h2>
-              <h3 style={ h3Css1 }>Outre le fais que Centrale Fitness vous propose un rabais proportionnel sur votre
-                abonnement en salle, cette écosystème vous propose aussi une autre forme d'avantage.</h3>
-              <h3 style={ h3Css2 }>Les partenaires sportifs de Centrales Fitness vous propose un ensemble de promotions
-                et
-                de réductions sur un ensemble de produits sportifs. </h3>
-              <h3 style={ h3Css2 }>Les rabais économiques auprès de nos partenaires ainsi que la ludification du sport
-                grâce à un fondement écologique vous rendront accro à cette nouvelle façon de pratiquer le sport.</h3>
-            </Col>
-          </Col>
-          <Col
-            style={ colCss }
-            name="test1"
-            xl={ 4 }
-            lg={ 4 }
-            md={ 4 }
-            sm={ 10 }
-            xs={ 10 }
-            offset={ { sm: 1, xs: 1, md: 0, xl: 0, lg: 0 } }
-            pull={ { xl: 8, lg: 8, md: 8 } }
-          >
-            <Col>
-              <Img
-                style={ imageCss }
-                className={ 'img-fluid img-responsive' }
-                alt={ 'Responsive image' }
-                src={ piggyBank }
-              />
-            </Col>
-          </Col>
-        </Row> */ }
       </Container>
     );
   }

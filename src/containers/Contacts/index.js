@@ -94,12 +94,12 @@ export default class myValues extends PureComponent {
     >
       <Row>
         <Col style={ { textAlign: 'center', paddingBottom: '30px', color: 'white' } }>
-          <h2>La Centrale Fitness reste à votre écoute !</h2>
+          <h2>Centrale Fitness reste à votre écoute !</h2>
         </Col>
       </Row>
       <Row>
         <Col style={ { textAlign: 'center', paddingBottom: '30px', color: 'white' } }>
-          <h3>Restez informer des nouveautés de Centrale
+          <h3>Restez informé des nouveautés de Centrale
             Fitness
             avec notre service de Newsletter</h3>
           <hr className="my-2" />
@@ -191,7 +191,7 @@ export default class myValues extends PureComponent {
                 </FormGroup>
                 { /* <div className="g-recaptcha" data-sitekey="your_site_key">test</div> */ }
                 <br />
-                <Button>Soumettre le formulaire</Button>
+                <Button>Envoyer</Button>
               </Form>
             </Col>
           </Row>
@@ -199,7 +199,7 @@ export default class myValues extends PureComponent {
             <Col
               style={ { textAlign: 'center', color: 'white' } }
             >
-              <h3>Afin de vous fournir les meilleurs réponses à vos questions la Centrale Fitness met à votre
+              <h3>Afin de vous fournir les meilleures réponses à vos questions Centrale Fitness met à votre
                 disposition plusieurs services.
               </h3>
             </Col>

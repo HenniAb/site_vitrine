@@ -134,6 +134,30 @@ export default class media extends PureComponent {
       email: this.state.userEmail
     };
     console.log(user);
+    /*
+    axios({
+      headers: {
+        Accept: 'application/json',
+        AccessControlAllowOrigin: 'http://localhost:8080/salles',
+        ContentType: 'application/json',
+        AccessControlAllowCredentials: true
+      },
+      baseURL: 'http://163.5.84.201:5540/notification',
+      timeout: 1000,
+      method: 'post',
+      data: {
+        city: this.state.userCity,
+        email: this.state.userEmail
+      }
+    }).then((response) => {
+      console.log('La requête a bien été envoyé');
+      console.log(response);
+    })
+      .catch((error) => {
+        console.log('La requête n\'a pas aboutis');
+        console.log(error);
+      });
+      */
     axios.post('http://163.5.84.201:5540/notification', { user })
       .then((response) => {
         console.log('La requête a bien été envoyé');
@@ -279,7 +303,7 @@ export default class media extends PureComponent {
               </Row>
               <Row>
                 <Col>
-                  <Button style={ { marginLeft: '48px' } }>Soumettre le formulaire</Button>
+                  <Button style={ { marginLeft: '48px' } }>Envoyer</Button>
                 </Col>
               </Row>
               { /* <div className="g-recaptcha" data-sitekey="your_site_key">test</div> */ }
