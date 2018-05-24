@@ -167,7 +167,7 @@ export default class media extends PureComponent {
         console.log('La requête n\'a pas aboutis');
         console.log(error);
       });
-    return false;
+    return true;
   };
 
   render() {

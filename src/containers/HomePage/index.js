@@ -92,9 +92,7 @@ export default class myBody extends PureComponent {
                 </Row>
                 <Row>
                   <Col className="alignItemsBg">
-                    <h3 style={ { width: '90%', margin: 'auto', padding: '0 15px' } }>La solution innovante pour vous motiver au sport tout
-                      en
-                      réduisant vos dépenses</h3>
+                    <h3 style={ { width: '90%', margin: 'auto', padding: '0 15px' } }>La solution innovante pour vous motiver au sport tout en vous sensibilisant à la consommation d'énergie</h3>
                   </Col>
                 </Row>
               </Col>
