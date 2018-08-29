@@ -113,7 +113,7 @@ export default class myFooter extends PureComponent {
                 >
                   <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/centralefitness/">
                     <SVGInline
-                      className="socialIconsFooter"
+                      className="socialIconsFooter facebookSVG"
                       svg={ Fb }
                     />
                   </a>
@@ -124,7 +124,7 @@ export default class myFooter extends PureComponent {
                 >
                   <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/centralefitness/">
                     <SVGInline
-                      className="socialIconsFooter"
+                      className="socialIconsFooter instagramSVG"
                       svg={ Instagram }
                     />
                   </a>
@@ -135,7 +135,7 @@ export default class myFooter extends PureComponent {
                 >
                   <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/FitnessCentrale">
                     <SVGInline
-                      className="socialIconsFooter"
+                      className="socialIconsFooter twitterSVG"
                       svg={ Twitter }
                     />
                   </a>
@@ -146,7 +146,7 @@ export default class myFooter extends PureComponent {
                 >
                   <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">
                     <SVGInline
-                      className="socialIconsFooter"
+                      className="socialIconsFooter youtubeSVG"
                       svg={ Yt }
                     />
                   </a>

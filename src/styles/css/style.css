@@ -57,7 +57,6 @@ header *, .rowHomepage *, footer * {
 
 /*************************************************/
 
-
 /*************************************************/
 /** PARTIE APPLICATIONS   *******************/
 
@@ -126,17 +125,17 @@ header *, .rowHomepage *, footer * {
     width: 90%;
 }
 
-.colCheckerboardOne{
+.colCheckerboardOne {
     background-color: #fbf8f6;
     color: #333333;
 }
 
-.colCheckerboardTwo{
+.colCheckerboardTwo {
     background-color: #333333;
     color: #fbf8f6;
 }
 
-.svgIcon1 svg{
+.svgIcon1 svg {
     max-height: 100px;
 }
 
@@ -145,14 +144,109 @@ header *, .rowHomepage *, footer * {
         transform: translateY(0) !important;
     }
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
     .retouche {
         transform: translateY(10%) !important;
     }
 }
 
-.retouche{
+.retouche {
     transform: translateY(25%);
+}
+
+/*************************************************/
+
+/*************************************************/
+/** PARTIE INTRANET   *******************/
+
+.rowHomepage {
+    background: linear-gradient(to left bottom, #FF5889, #FFBD68) no-repeat;
+}
+
+.firstRowIntranet {
+    /*filter: grayscale(100%);*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/intranetBg.jpg") center fixed;
+    animation-name: img-ani;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+#SVGIntranet svg {
+    height: 100%;
+    width: 100%;
+    max-height: 145px;
+    margin-top: 20px;
+}
+
+.secondRowIntranet_firstElem {
+    animation-name: img-ani;
+    opacity: 0;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    -webkit-transition-delay: 500ms; /* Safari */
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+.secondRowIntranet_secondElem {
+    animation-name: img-ani;
+    opacity: 0;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    -webkit-transition-delay: 1s; /* Safari */
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.secondRowIntranet_thirdElem {
+    animation-name: img-ani;
+    opacity: 0;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    -webkit-transition-delay: 1500ms; /* Safari */
+    animation-delay: 1500ms;
+    animation-fill-mode: forwards;
+}
+
+.secondRowIntranet_firstElem:hover .card-body *, .secondRowIntranet_secondElem:hover .card-body *, .secondRowIntranet_thirdElem:hover .card-body * {
+    color: black !important;
+}
+
+.secondRowIntranet_firstElem .card-body *, .secondRowIntranet_secondElem .card-body *, .secondRowIntranet_thirdElem .card-body * {
+    -webkit-transition: color 250ms;
+    transition: color 250ms;
+}
+
+.secondRowIntranet_firstElem:hover svg, .secondRowIntranet_secondElem:hover svg, .secondRowIntranet_thirdElem:hover svg {
+    fill: black !important;
+}
+
+.secondRowIntranet_firstElem svg, .secondRowIntranet_secondElem svg, .secondRowIntranet_thirdElem svg {
+    -webkit-transition: fill 250ms;
+    transition: fill 250ms;
+}
+
+.secondRowIntranet_firstElem:hover, .secondRowIntranet_secondElem:hover, .secondRowIntranet_thirdElem:hover {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    cursor: pointer;
+
+}
+
+.secondRowIntranet_firstElem, .secondRowIntranet_secondElem, .secondRowIntranet_thirdElem {
+    -webkit-transition: background-color 250ms;
+    transition: background-color 250ms;
+}
+
+.colBgSecond {
+    background: url('../../assets/images/intranet/4391.JPG') no-repeat center;
+    height: 100%;
+    background-size: cover;
+    padding: 0;
+}
+
+.colBgFourth {
+    background: url('../../assets/images/intranet/personal_trainer_with_client.jpg') no-repeat center;
+    height: 100%;
+    background-size: cover;
 }
 
 /*************************************************/
@@ -189,8 +283,34 @@ header *, .rowHomepage *, footer * {
     color: black;
 }
 
-.socialIconsFooter-svg path {
+.socialIconsFooter-svg, .facebookSVG path, .instagramSVG path, .youtubeSVG path, .twitterSVG path {
     fill: white !important;
+    -webkit-transition: fill 200ms;
+    transition: fill 200ms;
+}
+
+.facebookSVG:hover path {
+    fill: #3b5998 !important;
+    -webkit-transition: fill 200ms;
+    transition: fill 200ms;
+}
+
+.instagramSVG:hover path {
+    fill: #ffc838 !important;
+    -webkit-transition: fill 200ms;
+    transition: fill 200ms;
+}
+
+.twitterSVG:hover path {
+    fill: #00aced !important;
+    -webkit-transition: fill 200ms;
+    transition: fill 200ms;
+}
+
+.youtubeSVG:hover path {
+    fill: #ff0000 !important;
+    -webkit-transition: fill 200ms;
+    transition: fill 200ms;
 }
 
 .socialIconsFooterRow {
@@ -213,6 +333,7 @@ img {
 
 .navbar-light .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.66) !important;
+    margin-right: 5px;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -231,6 +352,7 @@ img {
     /*filter: grayscale(100%);*/
     height: 64vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/background.jpg") center;
+    background-size: cover;
     animation-name: img-ani;
     animation-duration: 1s;
     animation-timing-function: ease-in;
@@ -244,7 +366,7 @@ img {
 .homepageColText {
     width: 80% !important;
     flex: 0 0 auto !important;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
 }
 
 @keyframes img-ani {
@@ -258,7 +380,7 @@ img {
 
 @media only screen and (min-device-width: 768px) {
     .secondRowHomepage {
-/*        height: 30vh; */
+        /*        height: 30vh; */
     }
 
     .homePageElement {
@@ -268,21 +390,21 @@ img {
 
 @media only screen and (min-device-width: 560px) and (max-device-width: 768px) {
     .secondRowHomepage {
-       /* height: 60vh; */
+        /* height: 60vh; */
     }
 
     .homepageColText {
-       /* padding-top: 50px; */
+        /* padding-top: 50px; */
     }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 560px) {
     .secondRowHomepage {
-       /* height: 100vh;*/
+        /* height: 100vh;*/
     }
 
     .homepageColText {
-       /* padding-top: 50px; */
+        /* padding-top: 50px; */
     }
 }
 
