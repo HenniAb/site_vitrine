@@ -35737,28 +35737,6 @@ var App = function App(props) {
   })), _jsx(__WEBPACK_IMPORTED_MODULE_7_COMPONENTS_footer__["a" /* default */], {}))));
 };
 
-//           <Route exact path={ `${process.env.PUBLIC_URL}/` } component={ HomePage } />
-
-/* const App = props => (
-  <Provider store={ props.store }>
-    <HashRouter basename={ process.env.PUBLIC_URL }>
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path="" component={ HomePage } />
-          <Route exact path="application" component={ Application } />
-          <Route exact path="intranet" component={ Intranet } />
-          <Route exact path="salles" component={ Hall } />
-          <Route exact path="media" component={ Media } />
-          <Route exact path="contacts" component={ Contacts } />
-          <Route component={ NotFound } />
-        </Switch>
-        <Footer />
-      </div>
-    </HashRouter>
-  </Provider>
-); */
-
 App.propTypes = {
   store: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired
 };
@@ -90455,4 +90433,4 @@ module.exports = __webpack_require__(597);
 
 /***/ })
 ],[1431]);
-//# sourceMappingURL=js.8faa12e2c852ab0a3f33.js.map
+//# sourceMappingURL=js.8c433f6fb06ddc171521.js.map
