@@ -35710,27 +35710,27 @@ var App = function App(props) {
     basename: "/centrale-fitness"
   }, void 0, _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_6_COMPONENTS_header__["a" /* default */], {}), _jsx(__WEBPACK_IMPORTED_MODULE_3_react_router_dom_Switch___default.a, {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_4_react_router_dom_Route___default.a, {
     exact: true,
-    path: '/',
+    path: "/centrale-fitness" + '/',
     component: __WEBPACK_IMPORTED_MODULE_8__HomePage__["a" /* default */]
   }), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_router_dom_Route___default.a, {
     exact: true,
-    path: '/application',
+    path: "/centrale-fitness" + '/application',
     component: __WEBPACK_IMPORTED_MODULE_9__Applications__["a" /* default */]
   }), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_router_dom_Route___default.a, {
     exact: true,
-    path: '/intranet',
+    path: "/centrale-fitness" + '/intranet',
     component: __WEBPACK_IMPORTED_MODULE_10__Intranet__["a" /* default */]
   }), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_router_dom_Route___default.a, {
     exact: true,
-    path: '/salles',
+    path: "/centrale-fitness" + '/salles',
     component: __WEBPACK_IMPORTED_MODULE_11__Hall__["a" /* default */]
   }), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_router_dom_Route___default.a, {
     exact: true,
-    path: '/media',
+    path: "/centrale-fitness" + '/media',
     component: __WEBPACK_IMPORTED_MODULE_12__Media__["a" /* default */]
   }), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_router_dom_Route___default.a, {
     exact: true,
-    path: '/contacts',
+    path: "/centrale-fitness" + '/contacts',
     component: __WEBPACK_IMPORTED_MODULE_13__Contacts__["a" /* default */]
   }), _jsx(__WEBPACK_IMPORTED_MODULE_4_react_router_dom_Route___default.a, {
     component: __WEBPACK_IMPORTED_MODULE_14__NotFound__["a" /* default */]
@@ -90433,4 +90433,4 @@ module.exports = __webpack_require__(597);
 
 /***/ })
 ],[1431]);
-//# sourceMappingURL=js.8c433f6fb06ddc171521.js.map
+//# sourceMappingURL=js.8074520d800ac05a6627.js.map
