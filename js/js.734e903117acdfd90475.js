@@ -35707,7 +35707,7 @@ var App = function App(props) {
   }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_5_react_router_dom_BrowserRouter___default.a, {
     forceRefresh: !supportsHistory,
     keyLength: 12,
-    basename: "/centrale-fitness"
+    basename: '/centrale-fitness/#/'
   }, void 0, _jsx('div', {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_6_COMPONENTS_header__["a" /* default */], {}), _jsx(__WEBPACK_IMPORTED_MODULE_3_react_router_dom_Switch___default.a, {}, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_4_react_router_dom_Route___default.a, {
     exact: true,
     path: "/centrale-fitness" + '/',
@@ -90433,4 +90433,4 @@ module.exports = __webpack_require__(597);
 
 /***/ })
 ],[1431]);
-//# sourceMappingURL=js.8074520d800ac05a6627.js.map
+//# sourceMappingURL=js.734e903117acdfd90475.js.map
