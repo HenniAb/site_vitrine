@@ -2,7 +2,7 @@
   "name": "the-ultimate-boilerplate",
   "version": "2.0.1",
   "description": "The Ultimate Starter Kit For React Redux and Webpack",
-  "homepage": "https://touqeerkhan11.github.io/The-Ultimate-Boilerplate/",
+  "homepage": "https://nperitore.github.io/centrale-fitness",
   "main": "app.js",
   "scripts": {
     "postinstall": "npm run build",
@@ -21,6 +21,7 @@
     "cookie-parser": "~1.4.3",
     "express": "~4.15.0",
     "express-history-api-fallback": "^2.0.0",
+    "gh-pages": "^1.2.0",
     "html-loader": "^0.5.5",
     "morgan": "~1.8.1",
     "node-sass": "^4.9.3",

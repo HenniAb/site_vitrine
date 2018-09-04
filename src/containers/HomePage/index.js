@@ -142,7 +142,7 @@ export default class myBody extends PureComponent {
             <Row style={ { paddingTop: '56px', textAlign: 'center' } }>
               <Col
                 className="firstRowHomepage"
-                style={ { padding: '0', minHeight: '400px' } }
+                style={ { padding: '0', minHeight: '500px' } }
               >
                 <Row>
                   <Col
@@ -164,8 +164,9 @@ export default class myBody extends PureComponent {
                 </Row>
                 <Row>
                   <Col className="alignItemsBg">
-                    <h3 style={ { width: '90%', margin: 'auto', padding: '0 15px' } }>La solution innovante pour vous
-                      motiver au sport tout en vous sensibilisant à la consommation d'énergie</h3>
+                    <h3 style={ { width: '90%', margin: 'auto', padding: '0 15px' } }>La solution innovante pour booster
+                      la fréquentation de votre salle de sport en proposant un nouvel écosystème ludique à vos
+                      clients</h3>
                   </Col>
                 </Row>
               </Col>
@@ -462,7 +463,12 @@ export default class myBody extends PureComponent {
             <Col
               className="homepageColText"
             >
-              <h4 style={ { fontWeight: 'bold', marginBottom: '30px' } }>Répondez aux besoins des sportifs !</h4>
+              <h4 style={ { fontWeight: 'bold' } }>Répondez aux besoins des sportifs !</h4>
+              <h5 style={ { margin: '30px 0' } }>Notre solution s'organise sur un site dédié aux gérants des salles de
+                sport ainsi qu'une application IOS/android
+                destinée aux utilisateurs finaux. Boostez la fréquetation de votre salle de sport grâce à la multitude
+                de
+                possibilités que vous offre Centrale Fitness</h5>
               <h5 style={ { fontWeight: 'bold' } }>La création d’événements</h5>
               <p>Le gérant peut réunir ses adhérents autour d’un objectif commun pour une certaine durée. Les adhérents
                 de la salle se rassemblent alors et se challengent entre eux.</p>
@@ -483,10 +489,11 @@ export default class myBody extends PureComponent {
             } }
           >
             <Col
-              style={ { margin: '0 50px', padding: '30px' } }
+              style={ { margin: '0 50px', padding: '30px', height: '100%' } }
             >
               >
               <SVGInline
+                width={ '90%' }
                 alt="management_fitness_room"
                 svg={ project }
               />
@@ -619,9 +626,10 @@ export default class myBody extends PureComponent {
             } }
           >
             <Col
-              style={ { padding: '80px' } }
+              style={ { padding: '60px 20px' } }
             >
               <SVGInline
+                width={ '70%' }
                 alt="newsletter_centrale_fitness"
                 svg={ newsletter }
               />
