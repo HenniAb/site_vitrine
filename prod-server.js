@@ -18,6 +18,6 @@ app.use(express.static(path.join(__dirname, 'dist')));
 const root = path.join(__dirname, 'dist');
 app.use(fallback('index.html', { root }));
 
-openBrowser(`http://localhost:${80}/`);
+openBrowser(`http://localhost:${3030}/`);
 
 module.exports = app;

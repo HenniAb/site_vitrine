@@ -15,7 +15,7 @@ import Intranet from './Intranet';
 // import Team from './Team';
 import Hall from './Hall';
 import Media from './Media';
-import Contacts from './Contacts';
+// import Contacts from './Contacts';
 import NotFound from './NotFound';
 
 import '../styles/css/style.css';
@@ -33,18 +33,16 @@ const supportsHistory = 'pushState' in window.history;
 
 const App = props => (
   <Provider store={ props.store }>
-    <BrowserRouter forceRefresh={ !supportsHistory } keyLength={ 12 }>
+    <BrowserRouter forceRefresh={ !supportsHistory } basename={ process.env.PUBLIC_URL } keyLength={ 12 }>
       <div>
         <Header />
         <Switch>
-          <Route exact path="/" component={ HomePage } />
-          <Route exact path="/application" component={ Application } />
-          <Route exact path="/intranet" component={ Intranet } />
-          <Route exact path="/salles" component={ Hall } />
-          { /* <Route exact path="/valeurs" component={ Team } />
-           <Route exact path="/avis" component={ HomePage } /> */ }
-          <Route exact path="/media" component={ Media } />
-          <Route exact path="/contacts" component={ Contacts } />
+          <Route exact path={ `${process.env.PUBLIC_URL}/` } component={ HomePage } />
+          <Route exact path={ `${process.env.PUBLIC_URL}/application` } component={ Application } />
+          <Route exact path={ `${process.env.PUBLIC_URL}/intranet` } component={ Intranet } />
+          <Route exact path={ `${process.env.PUBLIC_URL}/salles` } component={ Hall } />
+          <Route exact path={ `${process.env.PUBLIC_URL}/media` } component={ Media } />
+          { /* <Route exact path={ `${process.env.PUBLIC_URL}/contacts` } component={ Contacts } /> */ }
           <Route component={ NotFound } />
         </Switch>
         <Footer />

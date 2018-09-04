@@ -69,19 +69,24 @@ export default class Applications extends PureComponent {
               className="homepageColText"
               style={ { color: 'white' } }
             >
-              <h5 style={ { paddingBottom: '30px', fontWeight: 'bold' } }>Donnez vie à l’écosystème Centrale Fitness en téléchargeant l’application disponible sur iOS et Android !</h5>
-              <h5>Etape un : Commencez votre exercice pour produire une énergie verte et profitez de l’ensemble des services.</h5>
+              <h5 style={ { paddingBottom: '30px', fontWeight: 'bold' } }>Donnez vie à l’écosystème Centrale Fitness en
+                téléchargeant l’application disponible sur iOS et Android !</h5>
+              <h5>Etape un : Commencez votre exercice pour produire une énergie verte et profitez de l’ensemble des
+                services.</h5>
               <h5 style={ { paddingTop: '15px' } }>Etape deux : Pédalez pour produire une énergie
                 verte
                 et interagissez avec l’ensemble des services de votre application.</h5>
-              <p style={ { paddingTop: '30px' } }>Analysez vos progrès, défiez vos amis, et suivez les événements de votre salle labellisée Centrale Fitness. Vous avez tant à découvrir sur notre application !</p>
+              <p style={ { paddingTop: '30px' } }>Analysez vos progrès, défiez vos amis, et suivez les événements de
+                votre salle labellisée Centrale Fitness. Vous avez tant à découvrir sur notre application !</p>
               <Row>
                 <Col>
-                  <img
-                    style={ { width: '230px', display: 'block', margin: 'auto' } }
-                    alt="app store and play store"
-                    src={ appStore }
-                  />
+                  <a href="http://play.google.com/store/apps/details?id=">
+                    <img
+                      style={ { width: '230px', display: 'block', margin: 'auto' } }
+                      alt="app store and play store"
+                      src={ appStore }
+                    />
+                  </a>
                 </Col>
               </Row>
             </Col>
@@ -143,7 +148,8 @@ export default class Applications extends PureComponent {
                 style={ { width: '50%', textAlign: 'center' } }
               >
                 <h2 style={ { fontWeight: 'bold', padding: '30px 0', margin: 'auto', width: '80%' } }>Communiquer</h2>
-                <h5 style={ { margin: 'auto', width: '80%' } }>Etablissez des liens avec les autres abonnés de votre salle</h5>
+                <h5 style={ { margin: 'auto', width: '80%' } }>Etablissez des liens avec les autres abonnés de votre
+                  salle</h5>
               </Col>
             </Row>
           </Col>
@@ -177,7 +183,8 @@ export default class Applications extends PureComponent {
                 style={ { width: '50%', textAlign: 'center' } }
               >
                 <h2 style={ { fontWeight: 'bold', padding: '30px 0', margin: 'auto', width: '80%' } }>Défier</h2>
-                <h5 style={ { margin: 'auto', width: '80%' } }>Relevez des challenges et suivez l’actualité de votre salle</h5>
+                <h5 style={ { margin: 'auto', width: '80%' } }>Relevez des challenges et suivez l’actualité de votre
+                  salle</h5>
               </Col>
             </Row>
           </Col>
@@ -313,7 +320,7 @@ export default class Applications extends PureComponent {
             </Row>
           </Col>
         </Row>
-        <Row style={ { minHeight: '250px', paddingBottom: '90px' } }>
+        <Row style={ { minHeight: '250px' } }>
           <Col
             xl={ 6 }
             lg={ 6 }
