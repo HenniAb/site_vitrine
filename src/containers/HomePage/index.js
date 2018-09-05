@@ -142,7 +142,7 @@ export default class myBody extends PureComponent {
             <Row style={ { paddingTop: '56px', textAlign: 'center' } }>
               <Col
                 className="firstRowHomepage"
-                style={ { padding: '0', minHeight: '500px' } }
+                style={ { padding: '0', minHeight: '470px' } }
               >
                 <Row>
                   <Col
