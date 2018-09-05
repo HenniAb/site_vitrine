@@ -38,7 +38,7 @@ const App = props => (<Provider store={props.store}>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/application" component={Application} />
-        <Route exact path="intranet" component={Intranet} />
+        <Route exact path="/intranet" component={Intranet} />
         <Route exact path="/salles" component={Hall} />
         <Route exact path="/media" component={Media} />
         {/* <Route exact path={ `${process.env.PUBLIC_URL}/contacts` } component={ Contacts } /> */}
