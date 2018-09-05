@@ -31,25 +31,23 @@ if (process.env.NODE_ENV === 'development') {
 
 const supportsHistory = 'pushState' in window.history;
 
-const App = props => (
-  <Provider store={ props.store }>
-    <BrowserRouter forceRefresh={ !supportsHistory } basename={ process.env.PUBLIC_URL } keyLength={ 12 }>
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path={ `${process.env.PUBLIC_URL}/` } component={ HomePage } />
-          <Route exact path={ `${process.env.PUBLIC_URL}/application` } component={ Application } />
-          <Route exact path={ `${process.env.PUBLIC_URL}/intranet` } component={ Intranet } />
-          <Route exact path={ `${process.env.PUBLIC_URL}/salles` } component={ Hall } />
-          <Route exact path={ `${process.env.PUBLIC_URL}/media` } component={ Media } />
-          { /* <Route exact path={ `${process.env.PUBLIC_URL}/contacts` } component={ Contacts } /> */ }
-          <Route component={ NotFound } />
-        </Switch>
-        <Footer />
-      </div>
-    </BrowserRouter>
-  </Provider>
-);
+const App = props => (<Provider store={props.store}>
+  <BrowserRouter forceRefresh={!supportsHistory} basename={process.env.PUBLIC_URL} keyLength={12}>
+    <div>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/application" component={Application} />
+        <Route exact path="intranet" component={Intranet} />
+        <Route exact path="/salles" component={Hall} />
+        <Route exact path="/media" component={Media} />
+        {/* <Route exact path={ `${process.env.PUBLIC_URL}/contacts` } component={ Contacts } /> */}
+        <Route component={NotFound} />
+      </Switch>
+      <Footer />
+    </div>
+  </BrowserRouter>
+</Provider>);
 
 App.propTypes = {
   store: PropTypes.object.isRequired
