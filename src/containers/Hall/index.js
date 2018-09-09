@@ -302,11 +302,19 @@ export default class media extends PureComponent {
                 </Col>
               </Row>
               <Row>
+                <Col style={ { paddingBottom: '15px' } }>
+                  <div
+                    style={ { marginLeft: '48px' } }
+                    className="g-recaptcha"
+                    data-sitekey="6LfaUm8UAAAAAIqTMit81Plv_wFTXHxG05Jt9z_z"
+                  />
+                </Col>
+              </Row>
+              <Row>
                 <Col>
                   <Button style={ { marginLeft: '48px' } }>Envoyer</Button>
                 </Col>
               </Row>
-              { /* <div className="g-recaptcha" data-sitekey="your_site_key">test</div> */ }
             </Form>
           </Col>
         </Row>
