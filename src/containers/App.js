@@ -31,18 +31,18 @@ if (process.env.NODE_ENV === 'development') {
 
 const supportsHistory = 'pushState' in window.history;
 
-const App = props => (<Provider store={props.store}>
-  <BrowserRouter forceRefresh={!supportsHistory} basename={process.env.PUBLIC_URL} keyLength={12}>
+const App = props => (<Provider store={ props.store }>
+  <BrowserRouter forceRefresh={ !supportsHistory } basename={ process.env.PUBLIC_URL } keyLength={ 12 }>
     <div>
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/application" component={Application} />
-        <Route exact path="/intranet" component={Intranet} />
-        <Route exact path="/salles" component={Hall} />
-        <Route exact path="/media" component={Media} />
-        {/* <Route exact path={ `${process.env.PUBLIC_URL}/contacts` } component={ Contacts } /> */}
-        <Route component={NotFound} />
+        <Route exact path="/" component={ HomePage } />
+        <Route exact path="/application" component={ Application } />
+        <Route exact path="/intranet" component={ Intranet } />
+        <Route exact path="/salles" component={ Hall } />
+        <Route exact path="/media" component={ Media } />
+        { /* <Route exact path={ `${process.env.PUBLIC_URL}/contacts` } component={ Contacts } /> */ }
+        <Route component={ NotFound } />
       </Switch>
       <Footer />
     </div>
