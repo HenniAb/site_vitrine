@@ -159,7 +159,9 @@ export default class myFooter extends PureComponent {
               <span className="normalFont">@</span>Centrale Fitness<span className="normalFont"> 2018</span>
             </Col>
             <Col style={ { textAlign: 'right' } }>
-              <span>Mentions légales</span>
+              <a href="/legal">
+                <span>Mentions légales</span>
+              </a>
             </Col>
           </Row>
         </Container>

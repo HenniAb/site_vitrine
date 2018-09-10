@@ -12,11 +12,10 @@ import Footer from 'COMPONENTS/footer';
 import HomePage from './HomePage';
 import Application from './Applications';
 import Intranet from './Intranet';
-// import Team from './Team';
 import Hall from './Hall';
 import Media from './Media';
-// import Contacts from './Contacts';
 import NotFound from './NotFound';
+import Legal from './Legal';
 
 import '../styles/css/style.css';
 
@@ -27,6 +26,7 @@ if (process.env.NODE_ENV === 'development') {
   require('./Media'); // eslint-disable-line global-require
   require('./Contacts'); // eslint-disable-line global-require
   require('./NotFound'); // eslint-disable-line global-require
+  require('./Legal'); // eslint-disable-line global-require
 }
 
 const supportsHistory = 'pushState' in window.history;
@@ -41,8 +41,8 @@ const App = props => (<Provider store={ props.store }>
         <Route exact path="/intranet" component={ Intranet } />
         <Route exact path="/salles" component={ Hall } />
         <Route exact path="/media" component={ Media } />
-        { /* <Route exact path={ `${process.env.PUBLIC_URL}/contacts` } component={ Contacts } /> */ }
-        <Route component={ NotFound } />
+        <Route exact path="/legal" component={ Legal } />
+        <Route exact path="/*" component={ NotFound } />
       </Switch>
       <Footer />
     </div>

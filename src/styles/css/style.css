@@ -125,6 +125,11 @@ header *, .rowHomepage *, footer * {
     width: 90%;
 }
 
+.SVGInlineNotFound svg {
+    margin: auto;
+    display: block;
+}
+
 .colCheckerboardOne {
     background-color: #fbf8f6;
     color: #333333;
@@ -188,6 +193,7 @@ header *, .rowHomepage *, footer * {
     animation-delay: 500ms;
     animation-fill-mode: forwards;
 }
+
 .secondRowIntranet_secondElem {
     animation-name: img-ani;
     opacity: 0;
@@ -197,6 +203,7 @@ header *, .rowHomepage *, footer * {
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
+
 .secondRowIntranet_thirdElem {
     animation-name: img-ani;
     opacity: 0;
