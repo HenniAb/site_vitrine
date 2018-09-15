@@ -605,9 +605,16 @@ export default class myBody extends PureComponent {
                     </Col>
                   </Row>
                 </FormGroup>
-                { /* <div className="g-recaptcha" data-sitekey="your_site_key">test</div> */ }
-                <br />
-                <Button>Envoyer</Button>
+                <Row>
+                  <Col>
+                    <div className="g-recaptcha" data-sitekey="6LfaUm8UAAAAAIqTMit81Plv_wFTXHxG05Jt9z_z" />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Button>Envoyer</Button>
+                  </Col>
+                </Row>
               </Form>
             </Col>
           </Col>

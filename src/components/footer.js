@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import SVGInline from 'react-svg-inline';
+import Link from 'react-router-dom/Link';
 import iconSVG from '../assets/images/logoCf.svg';
 import Fb from '../assets/images/iconesFooter/004-facebook.svg';
 import Instagram from '../assets/images/iconesFooter/instagram.svg';
@@ -159,7 +160,9 @@ export default class myFooter extends PureComponent {
               <span className="normalFont">@</span>Centrale Fitness<span className="normalFont"> 2018</span>
             </Col>
             <Col style={ { textAlign: 'right' } }>
-              <span>Mentions légales</span>
+              <Link to="/legal">
+                <span>Mentions légales</span>
+              </Link>
             </Col>
           </Row>
         </Container>

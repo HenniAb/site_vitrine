@@ -1,21 +1,68 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Header, Icon, Button } from 'semantic-ui-react';
+import React, { PureComponent } from 'react';
+import { Container, Row, Col } from 'react-grid-system';
+import SVGInline from 'react-svg-inline';
+import car from 'src/assets/images/notFoud/car.svg';
 
-const NotFound = props => (
-  <main className="notFound">
-    <Header as="h1" icon textAlign="center" color="grey">
-      <Icon name="minus circle" color="red" circular />
-      <Header.Content>
-        404 NOT FOUND
-      </Header.Content>
-    </Header>
-    <Button content="Back on tracks" icon="left arrow" labelPosition="left" onClick={() => props.history.push('/')} />
-  </main>
-);
-
-NotFound.propTypes = {
-  history: PropTypes.func.isRequired
-};
-
-export default NotFound;
+export default class notFound extends PureComponent {
+  render() {
+    return (
+      <Container fluid>
+        <Row
+          style={ {
+            paddingTop: '56px',
+            background: 'linear-gradient(to right top, rgb(58, 97, 134), rgb(137, 37, 62)) no-repeat'
+          } }
+        >
+          <Col
+            xl={ 6 }
+            lg={ 6 }
+            md={ 6 }
+            sm={ 12 }
+            xs={ 12 }
+            push={ { xl: 6, lg: 6, md: 6 } }
+            style={ {
+              textAlign: 'left',
+              color: 'white',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '15px 0'
+            } }
+          >
+            <Col
+              className="homepageColText"
+            >
+              <h1 style={ { paddingBottom: '30px', fontWeight: 'bold' } }>Erreur
+                <span style={ { fontFamily: 'sans-serif' } }> 404</span> !</h1>
+              <h3 style={ { paddingBottom: '30px', fontWeight: 'bold' } }>Oh no bad luck !</h3>
+              <h4>L'adresse de cette page est invalide ! Veuillez vous rediriger sur l'adresse d'une page valide.</h4>
+            </Col>
+          </Col>
+          <Col
+            xl={ 6 }
+            lg={ 6 }
+            md={ 6 }
+            sm={ 12 }
+            xs={ 12 }
+            offset={ { sm: 0, xs: 0, md: 0, xl: 0, lg: 0 } }
+            pull={ { xl: 6, lg: 6, md: 6 } }
+            style={ {
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            } }
+          >
+            <Col>
+              <SVGInline
+                className="SVGInlineNotFound"
+                width={ '80%' }
+                alt="error 404 picture"
+                svg={ car }
+              />
+            </Col>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
+}
