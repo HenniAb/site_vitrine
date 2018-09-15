@@ -7,9 +7,9 @@ import {
   Navbar,
   NavbarToggler,
   NavbarBrand,
-  Nav,
-  NavLink
+  Nav
 } from 'reactstrap';
+import Link from 'react-router-dom/Link';
 import SVGInline from 'react-svg-inline';
 import logo from 'src/assets/images/logoCf.svg';
 
@@ -58,30 +58,30 @@ export default class HeaderLinks extends PureComponent {
               navbar
               style={ { textAlign: 'center' } }
             >
-              <NavLink href="/" className="navbarLinksCf">
+              <Link to="/" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Notre Solution</span>
-              </NavLink>
-              <NavLink href="/application" className="navbarLinksCf">
+              </Link>
+              <Link to="/application" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Nos Applications</span>
-              </NavLink>
-              <NavLink href="/intranet" className="navbarLinksCf">
+              </Link>
+              <Link to="/intranet" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Pour les gérants</span>
-              </NavLink>
-              <NavLink href="/salles" className="navbarLinksCf">
+              </Link>
+              <Link to="/salles" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Nos salles</span>
-              </NavLink>
-              { /* <NavLink href="/valeurs" className="navbarLinksCf">
+              </Link>
+              { /* <Link href="/valeurs" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">L'équipe</span>
-              </NavLink>
-               <NavLink href="/avis" className="navbarLinksCf">
+              </Link>
+               <Link href="/avis" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Avis des utilisateurs</span>
-              </NavLink> */ }
-              <NavLink href="/media" className="navbarLinksCf">
+              </Link> */ }
+              <Link to="/media" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Média</span>
-              </NavLink>
-              { /* <NavLink href="/contacts" className="navbarLinksCf">
+              </Link>
+              { /* <Link href="/contacts" className="navbarLinksCf">
                 <span className="navbarLinksTextCf">Contacts</span>
-              </NavLink> */ }
+              </Link> */ }
             </Nav>
           </Collapse>
         </Navbar>
