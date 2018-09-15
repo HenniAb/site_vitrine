@@ -277,6 +277,7 @@ header *, .rowHomepage *, footer * {
 
 .navbarLinksCf:hover {
     background: white;
+    text-decoration: none;
 }
 
 .navbarLinksCf:hover .navbarLinksTextCf {

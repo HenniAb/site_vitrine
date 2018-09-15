@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import Switch from 'react-router-dom/Switch';
 import Route from 'react-router-dom/Route';
 // import Helmet from 'react-helmet';
-import BrowserRouter from 'react-router-dom/BrowserRouter';
+import HashRouter from 'react-router-dom/HashRouter';
 
 import Header from 'COMPONENTS/header';
 import Footer from 'COMPONENTS/footer';
@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === 'development') {
 const supportsHistory = 'pushState' in window.history;
 
 const App = props => (<Provider store={ props.store }>
-  <BrowserRouter forceRefresh={ !supportsHistory } basename={ process.env.PUBLIC_URL } keyLength={ 12 }>
+  <HashRouter forceRefresh={ !supportsHistory } basename={ process.env.PUBLIC_URL } keyLength={ 12 }>
     <div>
       <Header />
       <Switch>
@@ -46,7 +46,7 @@ const App = props => (<Provider store={ props.store }>
       </Switch>
       <Footer />
     </div>
-  </BrowserRouter>
+  </HashRouter>
 </Provider>);
 
 App.propTypes = {

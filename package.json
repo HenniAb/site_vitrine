@@ -2,7 +2,7 @@
   "name": "the-ultimate-boilerplate",
   "version": "2.0.1",
   "description": "The Ultimate Starter Kit For React Redux and Webpack",
-  "homepage": "https://nperitore.github.io/centrale-fitness",
+  "homepage": "https://nperitore.github.io/centrale-fitness/",
   "main": "app.js",
   "scripts": {
     "postinstall": "npm run build",
